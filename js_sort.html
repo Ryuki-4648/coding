@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ソート | JS/JQ | Styleguide</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Meta Description -->
+  <meta name="Description" content="Web制作でよく使うレイアウトまとめ | Flexbox、ボタン、ホバー、見出し、リスト、テーブル、フォーム、アニメーション、html、css">
+
+  <!-- Fonts -->
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/common/favicon.ico">
+
+  <!-- Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/apple-touch-icon.png">
+
+  <!-- OGP -->
+  <meta name="og:url" content="">
+  <meta name="og:title" content="">
+  <meta name="og:image" content="http:///assets/img/common/ogp_img.png">
+  <meta name="og:description" content="">
+  <meta name="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+</head>
+<body>
+
+  <style>
+    .select-box {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0 auto 50px;
+    }
+    .select-box li {
+      cursor: pointer;
+      margin: 0 auto;
+      color: #777;
+    }
+    .category-box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .category-box div {
+      width: 100px;
+      border: 1px solid #ddd;
+      text-align: center;
+      font-size: 13px;
+      padding: 10px 0;
+      width: 30%;
+      margin: 0 auto 20px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  
+  <!-- ▼ header ▼ -->
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__logo"><a href="/"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ"></a></div>
+      <div class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="/index.html" class="nav-link">トップ</a></li>
+          <li class="header__item"><a href="/animation.html" class="nav-link">アニメーション</a></li>
+          <li class="header__item"><a href="/effect.html" class="nav-link">エフェクト</a></li>
+          <li class="header__item"><a href="/form.html" class="nav-link">フォーム</a></li>
+          <li class="header__item"><a href="/list.html" class="nav-link">リスト</a></li>
+          <li class="header__item"><a href="/js_sort.html" class="nav-link">ソート</a></li>
+          <li class="header__item"><a href="/switch.html" class="nav-link">切り替え</a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- ▲ pc /.header ▲ -->
+
+  <!-- ▼ sp navigation ▼ -->
+  <nav class="nav-sp">
+    <div class="nav-sp__logo"><a href="/" class="nav-sp__logo--link"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img"></a></div>
+    <div class="nav-sp__wrap">
+      <div class="nav-sp__cnt01 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__cnt02 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="nav-sp__menu">
+      <div class="nav-sp__logo nav-sp__menu--open">
+        <a href="/index.html" class="nav-sp__logo--link">
+          <img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img">
+        </a>
+      </div>
+
+      <ul class="nav-sp__list">
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ▲ sp /.nav-sp ▲ -->
+
+  <br><br><br><br><br>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <p>クリックすると当てはまるものだけ表示させる。</p>
+      <br><br><br>
+      <ul class="select-box">
+        <li id="cat01">北海道・東北・北陸</li>
+        <li id="cat02">関東・甲信越</li>
+        <li id="cat03">中部・東海</li>
+        <li id="cat04">近畿・四国</li>
+        <li id="cat05">九州・沖縄</li>
+        <li id="all">すべて</li>
+      </ul>
+
+      <div class="category-box">
+        <div class="category cat-01 hidden">
+          <p>北海道</p>
+        </div>
+        <div class="category cat-04 hidden">
+          <p>兵庫県</p>
+        </div>
+        <div class="category cat-02 hidden">
+          <p>山梨県</p>
+        </div>
+        <div class="category cat-04 hidden">
+          <p>大阪府</p>
+        </div>
+        <div class="category cat-03 hidden">
+          <p>長野県</p>
+        </div>
+        <div class="category cat-05 hidden">
+          <p>長崎県</p>
+        </div>
+        <div class="category cat-05 hidden">
+          <p>宮崎県</p>
+        </div>
+        <div class="category cat-01 hidden">
+          <p>新潟県</p>
+        </div>
+        <div class="category cat-02 hidden">
+          <p>東京都</p>
+        </div>
+        <div class="category cat-03 hidden">
+          <p>三重県</p>
+        </div>
+        <div class="category cat-03 hidden">
+          <p>岐阜県</p>
+        </div>
+        <div class="category cat-05 hidden">
+          <p>佐賀県</p>
+        </div>
+        <div class="category cat-02 hidden">
+          <p>茨城県</p>
+        </div>
+        <div class="category cat-05 hidden">
+          <p>沖縄県</p>
+        </div>
+        <div class="category cat-01 hidden">
+          <p>青森県</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    $('.category-box .category').removeClass('hidden');
+  
+    for ( let i = 1; i < 6; i++ ) {
+      $(`#cat0${i}`).on('click', function(){
+        //console.log(`#cat0${i}`);
+        $('.category-box .category').not(`.cat-0${i}`).addClass('hidden');
+        $(`.cat-0${i}`).removeClass('hidden');
+      });
+    }
+    // letをvarにすると全部.hiddenが付いて消えてしまう。
+    // click後にconsole.log(`#cat0${i}`);→#cat06が出力されてしまう
+
+    /*
+    下記をfor文でまとめたもの　↑
+    $('#cat01').on('click', function(){
+      $('.category-box .category').not('.cat-01').addClass('hidden');
+      $('.cat-01').removeClass('hidden');
+    });
+    $('#cat02').on('click', function(){
+      $('.category-box .category').not('.cat-02').addClass('hidden');
+      $('.cat-02').removeClass('hidden');
+    });
+    $('#cat03').on('click', function(){
+      $('.category-box .category').not('.cat-03').addClass('hidden');
+      $('.cat-03').removeClass('hidden');
+    });
+    $('#cat04').on('click', function(){
+      $('.category-box .category').not('.cat-04').addClass('hidden');
+      $('.cat-04').removeClass('hidden');
+    });
+    $('#cat05').on('click', function(){
+      $('.category-box .category').not('.cat-05').addClass('hidden');
+      $('.cat-05').removeClass('hidden');
+    });
+    */
+
+    $('#all').on('click', function(){
+      $('.category-box .category').removeClass('hidden');
+    });
+
+  </script>
+</body>
+</html>

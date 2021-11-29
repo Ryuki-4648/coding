@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google Analytics -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- View Port -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>リスト | Styleguide</title>
+
+  <!-- Meta Description -->
+  <meta name="Description" content="">
+  <meta name="Keywords" content="">
+
+  <!-- Fonts -->
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/common/favicon.ico">
+
+  <!-- Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/apple-touch-icon.png">
+
+  <!-- OGP -->
+  <meta name="og:url" content="">
+  <meta name="og:title" content="">
+  <meta name="og:image" content="http:///assets/img/common/ogp_img.png">
+  <meta name="og:description" content="">
+  <meta name="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+</head>
+
+<body>
+
+  <!-- ▼ header ▼ -->
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__logo"><a href="/"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ"></a></div>
+      <div class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="/index.html" class="nav-link">トップ</a></li>
+          <li class="header__item"><a href="/animation.html" class="nav-link">アニメーション</a></li>
+          <li class="header__item"><a href="/effect.html" class="nav-link">エフェクト</a></li>
+          <li class="header__item"><a href="/form.html" class="nav-link">フォーム</a></li>
+          <li class="header__item"><a href="/list.html" class="nav-link">リスト</a></li>
+          <li class="header__item"><a href="/js_sort.html" class="nav-link">ソート</a></li>
+          <li class="header__item"><a href="/switch.html" class="nav-link">切り替え</a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- ▲ pc /.header ▲ -->
+
+  <!-- ▼ sp navigation ▼ -->
+  <nav class="nav-sp">
+    <div class="nav-sp__logo"><a href="/" class="nav-sp__logo--link"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img"></a></div>
+    <div class="nav-sp__wrap">
+      <div class="nav-sp__cnt01 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__cnt02 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="nav-sp__menu">
+      <div class="nav-sp__logo nav-sp__menu--open">
+        <a href="/index.html" class="nav-sp__logo--link">
+          <img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img">
+        </a>
+      </div>
+
+      <ul class="nav-sp__list">
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ▲ sp /.nav-sp ▲ -->
+
+  <br><br><br><br><br>
+
+  <section class="news c-cnt" id="page-list">
+    <div class="inner">
+      <h3 class="sample-ttl01">リスト</h3>
+      <p class="sample-ttl02"><span class="label">LIST</span></p>
+
+      <div class="pullDown">
+        <ul class="pullDown__list">
+          <li class="pullDown__item">
+            <select name="" class="select-area" id="select">
+              <option value="">全期間</option>
+              <option value="term2021">2021年</option>
+              <option value="term2020">2020年</option>
+              <option value="term2019">2019年</option>
+            </select>
+          </li>
+          <li class="pullDown__item">
+            <select name="" class="select-area">
+              <option value="cat01">全カテゴリ</option>
+              <option value="cat02">プレスリリース</option>
+              <option value="cat03">お知らせ</option>
+              <option value="cat03">カテゴリ</option>
+              <option value="cat03">ニュース</option>
+              <option value="cat03">掲載情報</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="list-01">
+        <li class="list-01__item">
+          <a href="hoge" class="list-01__link">
+            <time class="list-01__date">2021.12.34</time>
+            <span class="list-01__cat cat01">カテゴリ</span>
+            <p class="list-01__ttl">ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。</p>
+          </a>
+        </li>
+        <li class="list-01__item">
+          <a href="hoge" class="list-01__link">
+            <time class="list-01__date">2020.12.34</time>
+            <span class="list-01__cat cat02">プレスリリース</span>
+            <p class="list-01__ttl">ニュースのタイトルが入ります。</p>
+          </a>
+        </li>
+        <li class="list-01__item">
+          <a href="hoge" class="list-01__link">
+            <time class="list-01__date">2019.12.34</time>
+            <span class="list-01__cat cat02">お知らせ</span>
+            <p class="list-01__ttl">ニュースのタイトルが入ります。</p>
+          </a>
+        </li>
+        <li class="list-01__item">
+          <a href="hoge" class="list-01__link">
+            <time class="list-01__date">2018.12.34</time>
+            <span class="list-01__cat cat01">ニュース</span>
+            <p class="list-01__ttl">ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。ニュースのタイトルが入ります。</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01">リスト 02</h3>
+      <p class="sample-ttl02"><span class="label">LIST 02</span></p>
+      <div class="list-02">
+        <ul class="list-02__list">
+          <li class="list-02__item">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</li>
+          <li class="list-02__item">テキストがここに入ります。</li>
+          <li class="list-02__item">テキストがここに入ります。テキストがここに入ります。</li>
+          <li class="list-02__item">テキストがここに入ります。</li>
+          <li class="list-02__item">テキストがここに入ります。</li>
+          <li class="list-02__item">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-cnt breadcrumb">
+    <h3 class="sample-ttl01">リスト 03</h3>
+    <p class="sample-ttl02"><span class="label">LIST 03</span></p>
+    <div class="list-03 c-cnt">
+      <div class="inner">
+        <ul class="list-03__list">
+          <li class="list-03__item"><a href="/">HOME</a></li>
+          <li class="list-03__item"><a href="hoge">商品情報</a></li>
+          <li class="list-03__item"><span>ページタイトル</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.list-03 -->
+
+    <div class="list-03">
+      <div class="inner">
+        <ul class="list-03__list">
+          <li class="list-03__item"><a href="/">HOME</a></li>
+          <li class="list-03__item"><a href="hoge">商品情報商品情報</a></li>
+          <li class="list-03__item"><span>ページタイトルページタイトルページタイトルページタイトルページタイトルページタイトルページタイトルページタイトルページタイトルページタイトルページタイトル</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.list-03 -->
+  </section>
+
+  <section class="c-cnt breadcrumb">
+    <h3 class="sample-ttl01">リスト 04</h3>
+    <p class="sample-ttl02"><span class="label">LIST 04</span></p>
+    <div class="list-04">
+      <div class="inner">
+        <ul class="list-04__list">
+          <li class="list-04__item">テキストが入ります</li>
+          <li class="list-04__item">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</li>
+          <li class="list-04__item">テキストが入りますテキストが入りますテキストが入ります</li>
+          <li class="list-04__item">テキストが入ります</li>
+          <li class="list-04__item">テキストが入ります</li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.list-04 -->
+  </section>
+
+  <section class="c-cnt breadcrumb">
+    <h3 class="sample-ttl01">リスト 05</h3>
+    <p class="sample-ttl02"><span class="label">LIST 05</span></p>
+    <div class="list-05">
+      <div class="inner">
+        <ul class="list-05__list">
+          <li class="list-05__item">テキストが入ります</li>
+          <li class="list-05__item">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</li>
+          <li class="list-05__item">テキストが入りますテキストが入りますテキストが入ります</li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.list-05 -->
+  </section>
+
+</body>
+</html>

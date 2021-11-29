@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google Analytics -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- View Port -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>トップ | Styleguide | Web制作でよく使うレイアウト集</title>
+
+  <!-- Meta Description -->
+  <meta name="Description" content="Web制作でよく使うレイアウトまとめ | Flexbox、ボタン、ホバー、見出し、リスト、テーブル、フォーム、アニメーション、html、css">
+
+  <!-- Fonts -->
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/common/favicon.ico">
+
+  <!-- Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/apple-touch-icon.png">
+
+  <!-- OGP -->
+  <meta name="og:url" content="">
+  <meta name="og:title" content="">
+  <meta name="og:image" content="http:///assets/img/common/ogp_img.png">
+  <meta name="og:description" content="">
+  <meta name="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+</head>
+
+<body>
+
+  <!-- ▼ header ▼ -->
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__logo"><a href="/"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ"></a></div>
+      <div class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="/animation.html" class="nav-link">アニメーション</a></li>
+          <li class="header__item"><a href="/effect.html" class="nav-link">エフェクト</a></li>
+          <li class="header__item"><a href="/form.html" class="nav-link">フォーム</a></li>
+          <li class="header__item"><a href="/list.html" class="nav-link">リスト</a></li>
+          <li class="header__item"><a href="/js_sort.html" class="nav-link">ソート</a></li>
+          <li class="header__item"><a href="/switch.html" class="nav-link">切り替え</a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- ▲ pc /.header ▲ -->
+
+  <!-- ▼ sp navigation ▼ -->
+  <nav class="nav-sp">
+    <div class="nav-sp__logo"><a href="/" class="nav-sp__logo--link"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img"></a></div>
+    <div class="nav-sp__wrap">
+      <div class="nav-sp__cnt01 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__cnt02 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="nav-sp__menu">
+      <div class="nav-sp__logo nav-sp__menu--open">
+        <a href="/index.html" class="nav-sp__logo--link">
+          <img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img">
+        </a>
+      </div>
+
+      <ul class="nav-sp__list">
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ▲ sp /.nav-sp ▲ -->
+
+  <br><br><br><br><br>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <div class="c-block block-04">
+        <ul class="c-block__list block-04__list">
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#page-index" class="btn01" style="width: 100%;">見出し</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#wysiwyg" class="btn01" style="width: 100%;">ウィジウィグ</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#page-block" class="btn01" style="width: 100%;">ブロック</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#page-flexbox" class="btn01" style="width: 100%;">画像＋テキスト</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#page-column" class="btn01" style="width: 100%;">コラム</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#page-button" class="btn01" style="width: 100%;">ボタン</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#page-table" class="btn01" style="width: 100%;">テーブル</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#page-pagination" class="btn01" style="width: 100%;">ページャー</a></div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="c-btn ta-Center"><a href="#page-footerlayout" class="btn01" style="width: 100%;">フッター</a></div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-04 -->
+    </div>
+  </section>
+
+  <section class="c-cnt" id="page-index">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">見出し</h3>
+      <p class="sample-ttl02"><span class="label">INDEX</span></p>
+      <h1 class="hl-01">h1タグ：見出し1</h1>
+      <h2 class="hl-02">h2タグ：見出し2</h2>
+      <h3 class="hl-03">h3タグ：見出し3</h3>
+      <p class="c-txt">pタグ:ふつうのテキストに使います。(.c-txt)</p>
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">見出し（装飾付き）</h3>
+      <p class="sample-ttl02"><span class="label">INDEX</span></p>
+      <h1 class="hl-01">h1タグ：見出し1</h1>
+      <h2 class="hl-ul">h2タグ：見出し2</h2>
+      <h3 class="hl-lb">h3タグ：見出し3</h3>
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h2 class="hl-02 ta-Center">メッセージ見出し</h2>
+      <p class="c-txt">メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。<br>
+        メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。<br>
+        メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。メッセージのテキストがここに入ります。<br>
+        メッセージのテキストがここに入ります。
+      </p>
+      <br>
+      <p class="c-txt ta-Right">取締役の名前</p>
+    </div>
+  </section>
+
+  <section class="c-cnt" id="wysiwyg">
+    <div class="article-cnt sample-bg-01">
+      <div class="inner">
+        <p class="sample-ttl01" id="column-02">ウィジウィグ</p>
+        <p class="sample-ttl02"><span class="label">WYSIWYG</span></p>
+        <p class="c-txt">特定のclassで囲った中では、class名の無いタグに対してstyleが適用される。</p>
+        <br><br>
+        <h1>h1タグ：見出し1</h1>
+        <h2>h2タグ：見出し2</h2>
+        <h3>h3タグ：見出し3</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+
+    </div>
+  </section>
+
+  <section class="c-cnt" id="page-block">
+    <div class="inner">
+      <h3 class="sample-ttl01">1カラム</h3>
+      <p class="sample-ttl02"><span class="label">1 COLUMS</span></p>
+      <div class="c-block block-01">
+        <ul class="c-block__list block-01__list">
+          <li class="c-block__item block-01__item">
+            <div class="block-01__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-01__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-01 -->
+
+      <div class="c-block block-01">
+        <ul class="c-block__list block-01__list">
+          <li class="c-block__item block-01__item">
+            <a href="">
+              <div class="block-01__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-01__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-01 -->
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">2カラム</h3>
+      <p class="sample-ttl02"><span class="label">2 COLUMS</span></p>
+      <div class="c-block block-02">
+        <ul class="c-block__list block-02__list">
+          <li class="c-block__item block-02__item">
+            <div class="block-02__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-02__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-02__item">
+            <div class="block-02__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-02__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-02 -->
+
+      <div class="c-block block-02">
+        <ul class="c-block__list block-02__list">
+          <li class="c-block__item block-02__item">
+            <a href="">
+              <div class="block-02__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-02__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-02__item">
+            <a href="">
+              <div class="block-02__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-02__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-02 -->
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">3カラム</h3>
+      <p class="sample-ttl02"><span class="label">3 COLUMS</span></p>
+      <div class="c-block block-03">
+        <ul class="c-block__list block-03__list">
+          <li class="c-block__item block-03__item">
+            <div class="block-03__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-03__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-03__item">
+            <div class="block-03__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-03__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-03__item">
+            <div class="block-03__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-03__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-03__item">
+            <div class="block-03__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-03__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-03 -->
+
+      <div class="c-block block-03">
+        <ul class="c-block__list block-03__list">
+          <li class="c-block__item block-03__item">
+            <a href="">
+              <div class="block-03__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-03__txt">
+                <p class="txt-ttl">見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-03__item">
+            <a href="">
+              <div class="block-03__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-03__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-03__item">
+            <a href="">
+              <div class="block-03__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-03__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-03__item">
+            <a href="">
+              <div class="block-03__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-03__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-03__item">
+            <a href="">
+              <div class="block-03__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-03__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-03 -->
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">4カラム</h3>
+      <p class="sample-ttl02"><span class="label">4 COLUMS</span></p>
+      <div class="c-block block-04">
+        <ul class="c-block__list block-04__list">
+          <li class="c-block__item block-04__item">
+            <div class="block-04__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-04__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="block-04__img"><img src="/assets/img/dummy/dummy02.png" alt=""></div>
+            <div class="block-04__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="block-04__img"><img src="/assets/img/dummy/dummy03.png" alt=""></div>
+            <div class="block-04__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="block-04__img"><img src="/assets/img/dummy/dummy05.png" alt=""></div>
+            <div class="block-04__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="block-04__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-04__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-04 -->
+
+      <div class="c-block block-04">
+        <ul class="c-block__list block-04__list">
+          <li class="c-block__item block-04__item">
+            <a href="">
+              <div class="block-04__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-04__txt">
+                <p class="txt-ttl">見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-04__item">
+            <a href="">
+              <div class="block-04__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-04__txt">
+                <p class="txt-ttl">見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-04__item">
+            <a href="">
+              <div class="block-04__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-04__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-04__item">
+            <a href="">
+              <div class="block-04__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-04__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-04__item">
+            <a href="">
+              <div class="block-04__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-04__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+          <li class="c-block__item block-04__item">
+            <a href="">
+              <div class="block-04__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+              <div class="block-04__txt">
+                <p class="txt-ttl">見出し見出し見出し</p>
+                <p class="txt-msg">全体にリンク付き。</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-04 -->
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">5カラム</h3>
+      <p class="sample-ttl02"><span class="label">5 COLUMS</span></p>
+      <div class="c-block block-05">
+        <ul class="c-block__list block-05__list">
+          <li class="c-block__item block-05__item">
+            <div class="block-05__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-05__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-05__item">
+            <div class="block-05__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-05__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-05__item">
+            <div class="block-05__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-05__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-05__item">
+            <div class="block-05__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-05__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="c-block__item block-05__item">
+            <div class="block-05__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+            <div class="block-05__txt">
+              <p class="txt-ttl">見出し見出し見出し</p>
+              <p class="txt-msg">テキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-05 -->
+    </div>
+  </section>
+
+  <section class="c-cnt" id="page-flexbox">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">画像+テキスト</h3>
+      <p class="sample-ttl02"><span class="label">FLEXBOX</span></p>
+      <div class="flex-01">
+        <div class="flex-01__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+        <div class="flex-01__txt">
+          <p class="txt-ttl">見出し見出し見出し</p>
+          <p class="txt-msg">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+        </div>
+      </div>
+      <!-- /.flex-01 -->
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">画像+テキスト(reverse)</h3>
+      <p class="sample-ttl02"><span class="label">FLEXBOX</span></p>
+      <div class="flex-01 flex-reverse">
+        <div class="flex-01__img"><img src="/assets/img/dummy/dummy01.jpg" alt=""></div>
+        <div class="flex-01__txt">
+          <p class="txt-ttl">見出し見出し見出し</p>
+          <p class="txt-msg">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+        </div>
+      </div>
+      <!-- /.flex-01 .flex-reverse -->
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">いろんなレイアウト</h3>
+      <p class="sample-ttl02"><span class="label">LAYOUT</span></p>
+      <ul class="iconList iconList-pc">
+        <li class="iconList__item">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。</p>
+          </div>
+        </li>
+        <li class="iconList__item">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。テキストがここに入ります。</p>
+          </div>
+        </li>
+        <li class="iconList__item">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。</p>
+          </div>
+        </li>
+        <li class="iconList__item">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+          </div>
+        </li>
+      </ul>
+      <!-- /.iconList /.iconList-pc -->
+      <ul class="iconList iconList-pc">
+        <li class="iconList__item">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。</p>
+          </div>
+        </li>
+        <li class="iconList__item">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。</p>
+          </div>
+        </li>
+        <li class="iconList__item">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+          </div>
+        </li>
+      </ul>
+      <!-- /.iconList /.iconList-pc -->
+
+      <ul class="iconList02 iconList02__first iconList02__box iconList-sp">
+        <li class="iconList02__item column-01">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。</p>
+          </div>
+        </li>
+        <li class="iconList02__item">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。テキストがここに入ります。</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="iconList02__second iconList02__box">
+        <li class="iconList02__item column-01">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+          </div>
+        </li>
+        <li class="iconList02__item column-02">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。</p>
+          </div>
+        </li>
+        <li class="iconList02__item column-03">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。テキストがここに入ります。</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="iconList02__third iconList02__box">
+        <li class="iconList02__item column-01">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+          </div>
+        </li>
+        <li class="iconList02__item">
+          <div class="iconList__icon">
+            <img src="/assets/img/dummy/dummy_circle02.png" alt="" class="iconList__icon--img">
+            <p class="iconList__comment">テキストがここに入ります。テキストがここに入ります。</p>
+          </div>
+        </li>
+      </ul>
+      <!-- /.iconList02 -->
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <div class="c-wrap01 wrapCnt01">
+        <div class="wrap-img"><img src="/assets/img/dummy/dummy05.png" alt=""></div>
+        <div class="wrap-txt">
+          <h3 class="hl-03">見出しが入ります。見出し。</h3>
+          <p class="c-txt">テキストがここに入ります。テキストがここに入ります。</p>
+        </div>
+      </div>
+
+      <br><br><br>
+
+      <div class="c-wrap01 wrapCnt02">
+        <div class="wrap-img"><img src="/assets/img/dummy/dummy05.png" alt=""></div>
+        <div class="wrap-txt">
+          <h3 class="hl-03">見出しが入ります。見出し。</h3>
+          <p class="c-txt">テキストがここに入ります。テキストがここに入ります。</p>
+        </div>
+      </div>
+
+      <br><br><br><br>
+      <hr>
+      <br><br><br><br>
+
+      <div class="c-wrap02 wrapCnt03">
+        <div class="wrap-img"><div class="img-bg"></div></div>
+        <div class="wrap-txt">
+          <h3 class="hl-03">見出しが入ります。見出し。</h3>
+          <p class="c-txt">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+        </div>
+      </div>
+
+
+      <div class="c-wrap02 wrapCnt04">
+        <div class="wrap-img"><div class="img-bg"></div></div>
+        <div class="wrap-txt">
+          <h3 class="hl-03">見出しが入ります。見出し。</h3>
+          <p class="c-txt">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="page-column">コラム</h3>
+      <p class="sample-ttl02"><span class="label">COLUMN</span></p>
+      <div class="column-01">
+        <ul class="column-01__list">
+          <li class="column-01__item">
+            <a href="">
+              <div class="column-01__img">
+                <img src="/assets/img/dummy/dummy01.jpg" alt="">
+              </div>
+              <div class="column-01__txt">
+                <span class="column-01__label">カテゴリ名カテゴリ名</span><span class="column-01__date">2021/05/19</span>
+                <p class="column-01__ttl">タイトルがここに入ります。タイトルがここに入ります。タイトルがここに入ります。タイトルがここに入ります。タイトルがここに入ります。</p>
+                <p class="column-01__more">記事を見る<i class="fas fa-chevron-right"></i></p>
+              </div>
+            </a>
+          </li>
+          <li class="column-01__item">
+            <a href="">
+              <div class="column-01__img">
+                <img src="/assets/img/dummy/dummy01.jpg" alt="">
+              </div>
+              <div class="column-01__txt">
+                <span class="column-01__label">カテゴリ名</span><span class="column-01__date">2021/05/19 14:08</span>
+                <p class="column-01__ttl">タイトルがここに入ります。</p>
+                <p class="column-01__more">記事を見る<i class="fas fa-chevron-right"></i></p>
+              </div>
+            </a>
+          </li>
+          <li class="column-01__item">
+            <a href="">
+              <div class="column-01__img">
+                <img src="/assets/img/dummy/dummy01.jpg" alt="">
+              </div>
+              <div class="column-01__txt">
+                <span class="column-01__label">カテゴリ名</span><span class="column-01__date">2021/05/19</span>
+                <p class="column-01__ttl">タイトルがここに入ります。タイトルがここに入ります。タイトルがここに入ります。タイトルがここに入ります。</p>
+                <p class="column-01__more">記事を見る<i class="fas fa-chevron-right"></i></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-cnt" id="page-button">
+    <div class="inner">
+      <h3 class="sample-ttl01" id="column-02">ボタン</h3>
+      <p class="sample-ttl02"><span class="label">BUTTON</span></p>
+      <p>▽ inputタグ(hoverで変化)</p>
+        <div class="c-btn">
+          <input class="btn01" value="ボタンです">
+        </div>
+
+        <br><br>
+
+        <div class="c-btn">
+          <input class="btn02" value="ボタンです">
+        </div>
+
+        <br><br>
+
+        <p>▽ inputタグ(戻るボタン)</p>
+        <div class="c-btn">
+          <input class="btn01" value="トップへ戻る" onclick="location.href='/'">
+        </div>
+
+        <br><br>
+        
+        <p>▽ aタグ</p>
+        <div class="c-btn">
+          <a href="hoge" class="btn01">ボタンです</a>
+        </div>
+
+        <br><br>
+
+        <div class="c-btn">
+          <a href="hoge" class="btn02">ボタンです</a>
+        </div>
+
+        <br><br>
+        
+        <p class="ta-Center">▽ aタグ（中央寄せ） .c-btnに.ta-Center追加</p>
+        <div class="c-btn ta-Center">
+          <a href="hoge" class="btn01">ボタンです</a>
+        </div>
+    </div>
+  </section>
+
+  <section class="c-cnt" id="page-table">
+    <div class="inner">
+      <h3 class="sample-ttl01">テーブル</h3>
+      <p class="sample-ttl02"><span class="label">TABLE</span></p>
+      <table class="c-tbl c-tbl01">
+        <tr>
+          <th>テキストが入ります</th>
+          <td>テキストが入ります</td>
+        </tr>
+        <tr>
+          <th>テキストが入りますテキストが入りますテキストが入りますテキストが入ります</th>
+          <td>テキストが入りますテキストが入ります</td>
+        </tr>
+        <tr>
+          <th>テキストが入ります</th>
+          <td>
+            テキストが入りますテキストが入りますテキストが入ります<br>
+            テキストが入ります<br>
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>
+            テキストが入ります
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <h3 class="sample-ttl01">テーブル</h3>
+      <p class="sample-ttl02"><span class="label">TABLE</span></p>
+      <table class="c-tbl c-tbl02">
+        <tr>
+          <th>テキストが入りますテキストが入りますテキストが入りますテキストが入ります</th>
+          <td>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</td>
+        </tr>
+        <tr>
+          <th>テキストが入ります</th>
+          <td>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</td>
+        </tr>
+        <tr>
+          <th>テキストが入りますテキストが入ります</th>
+          <td>
+            <p>テキストが入りますテキストが入りますテキストが入ります</p>
+            <p>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  
+
+  
+
+  <section class="c-cnt" id="page-pagination">
+    <div class="inner">
+      <h3 class="sample-ttl01">ページャー</h3>
+      <p class="sample-ttl02"><span class="label">PAGER</span></p>
+
+      <ul class="pager">
+        <ul class="page-numbers">
+          <li><a class="prev page-numbers" href=""><img src="/assets/img/common/icon_prev.svg"></a></li>
+          <li><span aria-current="page" class="page-numbers current">1</span></li>
+          <li><a class="page-numbers" href="">2</a></li>
+          <li><a class="page-numbers" href="">3</a></li>
+          <li><a class="next page-numbers" href=""><img src="/assets/img/common/icon_next.svg"></a></li>
+        </ul>
+      </ul>
+    </div>
+  </section>
+  
+  <div class="page-top"><a href="#" class="arrow"></a></div>
+
+  <!-- ▼ footer ▼ -->
+  <footer class="footer" id="page-footerlayout">
+    <div class="inner">
+      <div class="footer__wrap">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <a href="/"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="logo-img"></a>
+            <p class="name">会社名がここに入ります。</p>
+            <p class="address">〒000-0000<br>ここに会社の住所が入ります。<br>ここに会社の住所が入ります。ここに会社の住所が入ります。</p>
+          </div>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="">トップ</a></li>
+            <li class="footer__item"><a href="">会社概要</a></li>
+            <li class="footer__item"><a href="">事業案内</a></li>
+            <li class="footer__item"><a href="">お知らせ</a></li>
+            <li class="footer__item"><a href="">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="subMenu">
+        <ul class="subMenu__list">
+          <li class="subMenu__item"><a href="">個人情報保護</a></li>
+          <li class="subMenu__item"><a href="">資料請求</a></li>
+          <li class="subMenu__item"><a href="">サイトマップ</a></li>
+          <li class="subMenu__item"><a href="">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="footer__cr">
+        <p>&copy;20XX 会社名 co.,ltd. All Right Reserved.</p>
+      </div>
+    </div>
+    
+  </footer>
+  <!-- ▲ footer ▲ -->
+
+  <!-- js -->
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>

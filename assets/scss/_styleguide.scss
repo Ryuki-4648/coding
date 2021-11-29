@@ -1,0 +1,51 @@
+/*  スタイルガイド用  */
+
+/* 背景 */
+.sample-bg-01 {
+  background-color: $contents-color01;
+  padding: 50px 0;
+}
+
+/* 見出し */
+.sample-ttl01 {
+  color: black;
+  text-align: center;
+  margin: 0 auto 15px;
+  font-size: 2.4rem;
+  font-weight: normal;
+
+  @include mq($mqTAB01) {
+    font-size: 2.1rem;
+  }
+}
+
+/* 見出し下の青ふきだし */
+.sample-ttl02 {
+  text-align: center;
+  margin: 0 auto 40px;
+
+  .label {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    background-color: $main-color01;
+    position: relative;
+
+    &::after {
+      border: 6px solid transparent;
+      border-top-color: $main-color01;
+      border-bottom-width: 0;
+      bottom: -5px;
+      content: "";
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      width: 0;
+    }
+  }
+}

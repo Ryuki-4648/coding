@@ -1,0 +1,166 @@
+/* ____________________ アニメーション ____________________ */
+
+/* 反転 */
+.kv_sec  {
+  .paper {
+    //transform-origin: 58% 0;
+    -webkit-animation: turn-over 3s ease-in-out 0s infinite;
+    animation: turn-over 3s ease-in-out 0s infinite;
+  }
+}
+
+@-webkit-keyframes turn-over {
+  0% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1)
+  }
+  50% {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1)
+  }
+  100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1)
+  }
+}
+
+@keyframes turn-over {
+  0% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1)
+  }
+  50% {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1)
+  }
+  100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1)
+  }
+}
+
+/* 波 */
+.relative {
+  position: relative;
+}
+.wave {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 6px;
+  top: 9px;
+  z-index: 1;
+  overflow: hidden;
+  &::after {
+    background-image: url('/assets/img/dummy/pic_02.png');
+    animation: wave-animation 1.2s linear infinite;
+    -webkit-animation: wave-animation 1.2s linear infinite;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    width: calc(100% + 17px);
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-size: auto 100%;
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translate3d(-17px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  }
+@-webkit-keyframes wave-animation {
+  0% {
+    -webkit-transform: translate3d(-17px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+
+/* ラインを引く */
+#animation-line {
+  .inner {
+    @include mq($mqPC01) {
+      width: 800px;
+    }
+    @include mq($mqTAB01) {
+      width: 500px;
+    }
+    @include mq($mqSP01) {
+      width: 300px;
+    }
+  }
+}
+
+.image-area {
+  text-align: center;
+  position: relative;
+  display: block;
+  .bar {
+    position: absolute;
+    width: 2px;
+    background-color: #c81414;
+    z-index: 300;
+    height: 0;
+    top: 0;
+  }
+  .bar-01 {
+    transition: all 1.5s;
+    &.is-active {
+      right: 390px;
+      @include mq($mqPC01) {
+        right: 276px;
+      }
+      @include mq($mqTAB01) {
+        right: 126px;
+      }
+      @include mq($mqSP01) {
+        right: 26px;
+      }
+    }
+  }
+  .bar-01_2 {
+    transition: all 1s;
+    &.is-active {
+      right: 480px;
+      height: 160px;
+      @include mq($mqPC01) {
+        right: 367px;
+      }
+      @include mq($mqTAB01) {
+        right: 218px;
+      }
+      @include mq($mqSP01) {
+        right: 115px;
+      }
+    }
+  }
+  .bar-01_3 {
+    transition: all 1.5s;
+    &.is-active {
+      right: 570px;
+      height: 270px;
+      @include mq($mqPC01) {
+        right: 460px;
+      }
+      @include mq($mqTAB01) {
+        right: 310px;
+      }
+      @include mq($mqSP01) {
+        right: 205px;
+      }
+    }
+  }
+}

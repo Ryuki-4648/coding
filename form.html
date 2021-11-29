@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google Analytics -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- View Port -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Styleguide</title>
+
+  <!-- Meta Description -->
+  <meta name="Description" content="">
+  <meta name="Keywords" content="">
+
+  <!-- Fonts -->
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/common/favicon.ico">
+
+  <!-- Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/apple-touch-icon.png">
+
+  <!-- OGP -->
+  <meta name="og:url" content="">
+  <meta name="og:title" content="">
+  <meta name="og:image" content="http:///assets/img/common/ogp_img.png">
+  <meta name="og:description" content="">
+  <meta name="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+</head>
+
+<body>
+
+  <!-- ▼ header ▼ -->
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__logo"><a href="/"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ"></a></div>
+      <div class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="/index.html" class="nav-link">トップ</a></li>
+          <li class="header__item"><a href="/animation.html" class="nav-link">アニメーション</a></li>
+          <li class="header__item"><a href="/effect.html" class="nav-link">エフェクト</a></li>
+          <li class="header__item"><a href="/form.html" class="nav-link">フォーム</a></li>
+          <li class="header__item"><a href="/list.html" class="nav-link">リスト</a></li>
+          <li class="header__item"><a href="/js_sort.html" class="nav-link">ソート</a></li>
+          <li class="header__item"><a href="/switch.html" class="nav-link">切り替え</a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- ▲ pc /.header ▲ -->
+
+  <!-- ▼ sp navigation ▼ -->
+  <nav class="nav-sp">
+    <div class="nav-sp__logo"><a href="/" class="nav-sp__logo--link"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img"></a></div>
+    <div class="nav-sp__wrap">
+      <div class="nav-sp__cnt01 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__cnt02 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="nav-sp__menu">
+      <div class="nav-sp__logo nav-sp__menu--open">
+        <a href="/index.html" class="nav-sp__logo--link">
+          <img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img">
+        </a>
+      </div>
+
+      <ul class="nav-sp__list">
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ▲ sp /.nav-sp ▲ -->
+
+  <br><br><br><br><br>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <div class="c-block block-04">
+        <ul class="c-block__list block-04__list">
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#page-searchform" class="btn01" style="width: 100%;">検索フォーム</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="#page-form" class="btn01" style="width: 100%;">フォーム</a></div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-04 -->
+    </div>
+  </section>
+
+  <section class="c-cnt" id="page-searchform">
+    <div class="inner">
+      <h3 class="sample-ttl01">検索フォーム</h3>
+      <p class="sample-ttl02"><span class="label">SEARCH</span></p>
+      <div class="searchBox">
+        <form action="/search/" id="search_form">
+          <div class="c-search">
+            <div class="c-search__inner">
+              <input type="search" name="search" placeholder="キーワードで探す" id="">
+              <div class="c-search-submit"><div class="c-btn"><a href="hoge" class="btn01">検索する</a></div></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-cnt" id="page-form">
+    <div class="inner">
+      <h3 class="sample-ttl01">フォーム</h3>
+      <p class="sample-ttl02"><span class="label">FORM</span></p>
+      
+      <div class="c-form">
+        <form>
+          <table class="c-form__tbl">
+            <tr class="c-form__item">
+              <th>お問い合わせ種類<span class="required">必須</span></th>
+              <td>
+                <select name="inquiryType" class="select-area c-form__area">
+                  <option value="inquiryType01">お問い合わせの項目</option>
+                  <option value="inquiryType02">お問い合わせの項目</option>
+                  <option value="inquiryType03">お問い合わせの項目</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="c-form__item">
+              <th>会社名</th>
+              <td><input id="company" type="text" name="company" class="text-area c-form__area" placeholder="会社名を入力してください"></td>
+            </tr>
+            <tr class="c-form__item">
+              <th>お名前<span class="required">必須</span</th>
+              <td><input id="yourname" type="text" name="yourname" class="text-area c-form__area" placeholder="お名前を入力してください"></td>
+            </tr>
+            <tr class="c-form__item">
+              <th>お問い合わせ内容<span class="required">必須</span</th>
+              <td><textarea id="message" type="text" name="message" class="msg-area"></textarea></td>
+            </tr>
+          </table>
+          <div class="check-area">
+            <input id="agree" type="checkbox" name="agree" value="個人情報保護方針に同意する"><label for="agree">個人情報保護方針に同意する</label>
+          </div>
+        </form>
+      </div>
+      <!-- /.c-form -->
+    </div>
+  </section>
+
+  <div class="page-top"><a href="#" class="arrow"></a></div>
+
+  <!-- ▼ footer ▼ -->
+  <footer class="footer" id="page-footerlayout">
+    <div class="inner">
+      <div class="footer__wrap">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <a href="/"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="logo-img"></a>
+            <p class="name">会社名がここに入ります。</p>
+            <p class="address">〒000-0000<br>ここに会社の住所が入ります。<br>ここに会社の住所が入ります。ここに会社の住所が入ります。</p>
+          </div>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="">トップ</a></li>
+            <li class="footer__item"><a href="">会社概要</a></li>
+            <li class="footer__item"><a href="">事業案内</a></li>
+            <li class="footer__item"><a href="">お知らせ</a></li>
+            <li class="footer__item"><a href="">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="subMenu">
+        <ul class="subMenu__list">
+          <li class="subMenu__item"><a href="">個人情報保護</a></li>
+          <li class="subMenu__item"><a href="">資料請求</a></li>
+          <li class="subMenu__item"><a href="">サイトマップ</a></li>
+          <li class="subMenu__item"><a href="">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="footer__cr">
+        <p>&copy;20XX 会社名 co.,ltd. All Right Reserved.</p>
+      </div>
+    </div>
+    
+  </footer>
+  <!-- ▲ footer ▲ -->
+
+  <!-- js -->
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>

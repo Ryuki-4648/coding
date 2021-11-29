@@ -1,0 +1,1223 @@
+@charset "utf-8";
+
+/* ____________________ テキスト ____________________ */
+
+.c-txt {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  @include mq($mqTAB01) {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+}
+
+/* ____________________ ブロック / block ____________________ */
+
+.c-cnt {
+  margin: 0 auto 100px;
+}
+
+.c-block {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mq($mqSP01) {
+    }
+  }
+}
+
+/* ブロック - 1カラム */
+.block-01 {
+  &__item {
+    width: 100%;
+    margin: 0 auto;
+    @include mq($mqSP01) {
+      width: 100%;
+    }
+  }
+  &__txt {
+    .txt-ttl {
+      font-size: 1.6rem;
+    }
+    .txt-msg {
+      font-size: 1.4rem;
+    }
+  }
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* ブロック - 2カラム */
+.block-02 {
+  &__item {
+    width: 48%;
+    @include mq($mqSP01) {
+      width: 100%;
+    }
+  }
+  &__txt {
+    .txt-ttl {
+      font-size: 1.6rem;
+    }
+    .txt-msg {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+/* ブロック - 3カラム */
+.block-03 {
+  &__list {
+    &::after {
+      display: block;
+      content:"";
+      width: 30%;
+    }
+  }
+  &__item {
+    width: 30%;
+    @include mq($mqSP01) {
+      width: 100%;
+    }
+  }
+  &__img {
+    text-align: center;
+  }
+  &__txt {
+    .txt-ttl {
+      font-size: 1.6rem;
+    }
+    .txt-msg {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+/* ブロック - 4カラム */
+.block-04 {
+  &__list {
+    &::after {
+      content: "";
+      display: block;
+      width: 23%;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 23%;
+      order: 1;
+    }
+  }
+  &__item {
+    width: 23%;
+    @include mq($mqTAB01) {
+      width: 48%;
+    }
+    @include mq($mqSP01) {
+      width: 100%;
+    }
+  }
+  &__img {
+    margin: 0 auto;
+    text-align: center;
+    img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__txt {
+    .txt-ttl {
+      font-size: 1.6rem;
+    }
+    .txt-msg {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+/* ブロック - 5カラム */
+.block-05 {
+  &__item {
+    width: 18%;
+    @include mq($mqTAB01) {
+      width: 48%;
+    }
+    @include mq($mqSP01) {
+      width: 100%;
+    }
+  }
+  &__txt {
+    .txt-ttl {
+      font-size: 1.6rem;
+    }
+    .txt-msg {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+
+
+
+/* ____________________ フレックスボックス ____________________ */
+
+/* フレックスボックス - 画像 + テキスト横並び */
+.flex-01 {
+  display: flex;
+  justify-content: space-between;
+  @include mq($mqTAB01) {
+    flex-wrap: wrap;
+  }
+  &__img {
+    width: 35%;
+    @include mq($mqTAB01) {
+      width: 100%;
+    }
+  }
+  &__txt {
+    width: 60%;
+    @include mq($mqTAB01) {
+      width: 100%;
+    }
+  }
+}
+
+
+/* ____________________ レイアウト ____________________ */
+
+.iconList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  @include mq($mqPC01) {
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 25%;
+    text-align: center;
+    &:nth-child(-n+4) {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__comment {
+    color: $main-color01;
+    font-size: 1.6rem;
+    margin: 0 auto 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    width: 100%;
+  }
+
+  &__explain {
+    font-size: 14px;
+    line-height: 2;
+    text-align: left;
+    @include mq($mqSP01) {
+      line-height: 1.5;
+    }
+  }
+
+  &__icon {
+    &--bg {
+      width: 163px;
+      height: 163px;
+      @include mq($mqTAB01) {
+        width: 150px;
+        height: 150px;
+      }
+      @include mq($mqSP01) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+/*
+.iconList02 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+    width: 18%;
+    text-align: center;
+    margin: 0 auto 60px;
+    @include mq($mqPC01) {
+      width: 30%;
+      margin: 0 0 30px;
+    }
+    @include mq($mqSP01) {
+      width: 48%;
+    }
+    &--img {
+      margin: 0 auto 15px;
+      width: 100%;
+      @include mq($mqSP01) {
+        margin: 0 auto 5px;
+      }
+    }
+    &--txt {
+      font-size: 14px;
+      text-align: center;
+      line-height: 2;
+      font-weight: 500;
+    }
+  }
+}
+*/
+
+/*
+.iconList-pc {
+  @include mq($mqTAB01) {
+    display: none;
+  }
+}
+
+.iconList-sp {
+  display: none;
+  @include mq($mqTAB01) {
+    display: unset;
+  }
+}
+*/
+
+.iconList02 {
+  @include mq($mqTAB01) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    width: 100%;
+    display: flex;
+  }
+
+  &__first {
+    justify-content: center;
+    margin: 0 0 30px;
+    .column-01 {
+      margin: 0 20px 0 0;
+    }
+  }
+  &__second {
+    justify-content: center;
+    margin: 0 0 30px;
+    .column-01 {
+      margin: 0 20px 0 0;
+      @include mq($mqSP01) {
+        margin: 0 10px 0 0;
+      }
+    }
+    .column-02 {
+      margin: 0;
+    }
+    .column-03 {
+      margin: 0 0 0 20px;
+      @include mq($mqSP01) {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+  &__third {
+    justify-content: center;
+    margin: 0 0 40px;
+    @include mq($mqSP01) {
+      margin: 0;
+    }
+    .column-01 {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  &__item {
+    width: unset;
+    text-align: center;
+    width: 30%;
+    @include mq($mqTAB01) {
+      width: 33%;
+    }
+  }
+}
+
+.c-wrap01 {
+  display: block;
+  position: relative;
+  .wrap-img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+  }
+  .wrap-txt {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 64px 32px;
+    background-color: $contents-color01;
+    position: absolute;
+    top: 80px;
+    @include mq($mqPC01) {
+      top: auto;
+      left: 30px;
+      max-width: calc(100% - 30px);
+      padding: 20px 25px 24px;
+      position: relative;
+      margin-top: -19px;
+    }
+  }
+}
+
+.wrapCnt01 {
+  .wrap-img {
+    margin-left: 0;
+    margin-right: auto;
+    z-index: 2;
+  }
+  .wrap-txt {
+    z-index: 3;
+    right: 0;
+    left: auto;
+    @include mq($mqPC01) {
+      right: -30px;
+    }
+  }
+}
+
+.wrapCnt02 {
+  flex-direction: row-reverse;
+  .wrap-img {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+  }
+  .wrap-txt {
+    right: auto;
+    left: 0;
+  }
+}
+
+
+
+.c-wrap02 {
+  margin: 0 auto;
+  position: relative;
+  .wrap-img {
+    height: 600px;
+    position: relative;
+    @include mq($mqPC01) {
+      height: 500px;
+    }
+    .img-bg {
+      width: calc(50vw + 385px);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: absolute;
+      height: 100%;
+    }
+  }
+  .wrap-txt {
+    background-color: $contents-color02;
+    width: 500px;
+    padding: 32px 64px;
+    position: relative;
+    box-sizing: border-box;
+    top: -200px;
+  }
+}
+
+.wrapCnt03 {
+  .wrap-img {
+    .img-bg {
+      background-image: url('/assets/img/dummy/dummy04.png');
+      left: auto;
+      right: 127px;
+      @include mq($mqPC01) {
+        left: -100px;
+        right: auto;
+      }
+      @include mq($mqTAB01) {
+        width: 100%;
+        left: -40px;
+      }
+    }
+  }
+  .wrap-txt {
+    left: 580px;
+    @include mq($mqPC01) {
+      width: calc(50% + 100px);
+      left: auto;
+      right: -40%;
+    }
+  }
+}
+
+.wrapCnt04 {
+  .wrap-img {
+    .img-bg {
+      background-image: url('/assets/img/dummy/dummy04.png');
+      left: 118px;
+    }
+  }
+  .wrap-txt {
+    left: 45px;
+    @include mq($mqPC01) {
+      width: calc(50% + 100px);
+      left: -24px;
+    }
+  }
+}
+
+/* ____________________ コラム / card ____________________ */
+
+.column-01 {
+  
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto 40px;
+    &::after {
+      display: block;
+      content:"";
+      width: 32%;
+    }
+  }
+
+  &__item {
+    width: 32%;
+    background-color: #fff;
+    filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.2));
+
+    @media screen and (max-width: 900px) {
+      width: 48%;
+      margin: 0 0 40px;
+    }
+
+    @include mq($mqSP01) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__txt {
+    padding: 20px;
+  }
+
+  &__label {
+    border: 1px solid $main-color01;
+    color: $main-color01;
+    padding: 2px 6px;
+    margin: 0 12px 0 0;
+    font-size: 1.4rem;
+  }
+
+  &__date {
+    color: $main-color01;
+    font-size: 1.6rem;
+  }
+
+  &__ttl {
+    margin: 20px 0 25px;
+    line-height: 2;
+  }
+
+  &__more {
+    color: $main-color01;
+    font-weight: bold;
+    font-size: 1.6rem;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    .fas {
+      margin: 0 0 0 20px;
+      font-size: 1.2rem;
+      right: -15px;
+    }
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    transition: all .3s;
+    @media screen and (min-width: 767px) {
+      &:hover {
+        opacity: .7;
+      }
+      &:hover .card-01__more {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* ____________________ テーブル ____________________ */
+
+/* テーブル - 共通 */
+.c-tbl {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  tr {
+    &:last-child {
+      td, th {
+        border-bottom: 1px solid $border-color01;
+      }
+    }
+  }
+  td, th {
+    text-align: left;
+    font-size: 1.6rem;
+    color: $font-color01;
+    box-sizing: border-box;
+    @include mq($mqSP01) {
+      font-size: 1.4rem;
+    }
+  }
+  th {
+    border-top: 1px solid $border-color01;
+    width: 256px;
+    padding: 16px;
+    vertical-align: top;
+    font-weight: normal;
+  }
+  td {
+    border-top: 1px solid $border-color01;
+    padding: 16px 16px 16px 0;
+    p {
+      border-bottom: 1px solid $border-color01;
+      padding: 0 0 16px 0;
+      &:last-child {
+        border-bottom: none;
+        padding: 16px 0 0;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .border-none {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  /* テーブル1 */
+  &01 {
+    tr {
+      @include mq($mqSP01) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &:last-child {
+        th {
+          @include mq($mqSP01) {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    th {
+      @include mq($mqSP01) {
+        width: 100%;
+        padding: 16px 16px 8px 16px;
+      }
+    }
+    td {
+      @include mq($mqSP01) {
+        width: 100%;
+        border-top: none;
+        padding: 0 16px 16px 16px;
+      }
+    }
+  }
+  
+
+  /* テーブル2 */
+  &02 {
+    th {
+      @include mq($mqSP01) {
+        width: 128px;
+      }
+    }
+  }
+
+  /* テーブル3 */
+  &03 {
+    tr {
+      @include mq($mqTAB01) {
+        display: flex;
+        flex-wrap: wrap;
+        &:last-child {
+          th {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    th, td {
+      @include mq($mqTAB01) {
+        width: 100%;
+      }
+    }
+    td {
+      @include mq($mqTAB01) {
+        border-top: none;
+        padding: 0 16px 24px;
+      }
+      .flexbox {
+        @include mq($mqTAB01) {
+          align-items: unset;
+        }
+      }
+    }
+    .flexbox {
+      align-items: center;
+      margin: 0 auto 16px;
+      &:last-child {
+        margin: 0 auto;
+      }
+      .left {
+        margin: 0 16px 0 0;
+        img {
+          width: 240px;
+          @include mq($mqTAB01) {
+            width: 160px;
+          }
+        }
+      }
+      .right {
+        h4 {
+          margin: 0 auto 5px;
+        }
+        p {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* ____________________ リスト ____________________ */
+
+/* リスト - お知らせなど */
+.list-01 {
+  &__list {
+    margin: 50px auto;
+  }
+  
+  &__item {
+    border-top: 1px solid #ddd;
+
+    &:last-child {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  &__link {
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 1.4rem;
+    color: $font-color01;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &__date {
+    font-size: 13px;
+    margin: 0 40px 0 0;
+  }
+
+  &__ttl {
+    display: inline-block;
+    width: 70%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin: 20px auto 0;
+    }
+  }
+
+  &__cat {
+    display: inline-block;
+    padding: 3px 0;
+    width: 130px;
+    text-align: center;
+    font-size: 13px;
+    margin: 0 40px 0 0;
+    line-height: 20px;
+    @media screen and (max-width: 767px) {
+      margin: 0 20px 0 0;
+    }
+  }
+  .cat01 {
+    color: #fff;
+    background-color: $main-color01;
+  }
+
+  .cat02 {
+    color: #fff;
+    background-color: $main-color02;
+  }
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+  @include mq($mqTAB01) {
+    flex-direction: unset;
+  }
+}
+
+/* リスト - 箇条書きなど */
+.list-02 {
+  background-color: $contents-color01;
+  padding: 30px 20px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0 0 30px;
+    @include mq($mqTAB01) {
+      padding: 0 0 0 20px;
+    }
+  }
+  &__item {
+    list-style: disc;
+    width: 48%;
+    font-size: 1.4rem;
+    margin: 0 auto 10px;
+    @include mq($mqTAB01) {
+      width: 100%;
+    }
+  }
+}
+
+/* リスト - パンくずなど */
+.list-03 {
+  background-color: $contents-color01;
+  padding: 15px 0;
+  &__list {
+    display: flex;
+    @include mq($mqTAB01) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    margin: 0 20px 0 0;
+    font-size: 1.4rem;
+    &:last-child {
+      margin: 0;
+      @include mq($mqTAB01) {
+        width: 100%;
+        margin: 10px auto 0;
+      }
+    }
+    &:not(:last-child) {
+      white-space: nowrap;
+    }
+    a {
+      &::after {
+        content: ">";
+        margin: 0 0 0 20px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* リスト - 流れなど */
+.list-04 {
+  &__item {
+    border: 1px solid #000;
+    margin: 0 auto 30px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    font-size: 1.4rem;
+    &:last-child {
+      margin: 0;
+    }
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url('/assets/img/dummy/dummy02.png');
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &:not(:first-child) {
+      margin: 50px auto 0;
+    }
+  }
+}
+
+/* リスト - 箇条書き */
+.list-05 {
+  &__item {
+    margin: 0 auto 20px;
+    font-size: 1.4rem;
+    display: flex;
+    &:last-child {
+      margin: 0;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin: 0 20px 0 0;
+      flex-shrink: 0;
+      background-image: url('/assets/img/dummy/dummy02.png');
+    }
+  }
+}
+
+
+/* ____________________ プルダウン / pullDown ____________________ */
+
+.pullDown {
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 48px;
+  }
+  &__item {
+    margin: 0 8px 0 0;
+    .select-area {
+      width: 120px;
+      height: 48px;
+    }
+  }
+}
+
+
+/* ____________________ 検索ボックス / c-search ____________________ */
+
+.searchBox {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.c-search {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+
+  &__inner {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    &::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 30px;
+      bottom: 0;
+      margin: auto;
+      background-image: url('/assets/img/dummy/dummy02.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 96%;
+      pointer-events: none;
+    }
+    input[type="search"] {
+      width: 100%;
+      height: 78px;
+      background-color: #f2f0ed;
+      border: none;
+      padding: 0 0 0 78px;
+      &::placeholder {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .c-search-submit {
+    width: 120px;
+    height: 48px;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+  .c-btn {
+    .btn01 {
+      width: 120px;
+    }
+  }
+  
+}
+
+
+/* ____________________ フォーム ____________________ */
+
+.c-form {
+  text-align: center;
+  
+  &__tbl {
+    width: 750px;
+    @include mq($mqTAB01) {
+      width: 100%;
+    }
+  }
+  &__item {
+    margin: 0 auto 48px;
+    display: flex;
+    flex-wrap: wrap;
+    @include mq($mqTAB01) {
+      margin: 0 auto 24px;
+    }
+    th {
+      width: 480px;
+      text-align: left;
+      margin: 0 0 16px;
+      font-size: 1.6rem;
+      font-weight: normal;
+      @include mq($mqTAB01) {
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 0 0 8px;
+      }
+      .required {
+        background-color: $main-color01;
+        color: #fff;
+        width: 48px;
+        line-height: 24px;
+        font-size: 1.4rem;
+        margin: 0 0 0 1.6rem;
+        display: inline-block;
+        text-align: center;
+        font-weight: normal;
+      }
+    }
+    td {
+      @include mq($mqTAB01) {
+        width: 100%;
+      }
+    }
+    .msg-area {
+      height: 320px;
+      width: 640px;
+      border: 1px solid $border-color01;
+      padding: 10px 0 0 16px;
+      box-sizing: border-box;
+      resize: vertical;
+      font-size: 1.6rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: $border-color01;
+      @include mq($mqTAB01) {
+        width: 100%;
+        font-size: 1.6rem;
+      }
+    }
+
+    .select-box {
+      position: relative;
+      &::after {
+        content: url('/assets/img/common/icon_arrow01.svg');
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 8px 8px;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+    }
+    .select-area {
+      &::-ms-expand {
+        display: none;
+      }
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+  }
+
+  &__area {
+    padding-left: 16px;
+    width: 480px;
+    height: 48px;
+    border: 1px solid $border-color01;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: $border-color01;
+    @include mq($mqTAB01) {
+      width: 100%;
+      font-size: 1.6rem;
+    }
+  }
+
+  // ※スマホ対応
+  input[type="text"], input[type="checkbox"], textarea, select {
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+
+  input::placeholder {
+    color: $border-color01;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+}
+
+
+/* ____________________ ページャー(WP用) / pagination ____________________ */
+
+.pagination {
+  text-align: center;
+  .page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.6rem;
+    li {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px 0 0;
+      .current {
+        border: 1px solid $main-color01;
+        background-color: $main-color01;
+        color: #fff;
+        border-radius: 2px;
+      }
+      a {
+        transition: all .3s;
+        border: 1px solid $main-color01;
+        color: $main-color01;
+        border-radius: 2px;
+      }
+      .dots {
+        width: 40px;
+        height: 40px;
+        color: $main-color01;
+      }
+    }
+  }
+}
+
+
+/* ____________________ 画像 ____________________ */
+
+.picture {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 28%;
+  }
+}
+
+.c-blog__thumb {
+  position: relative;
+  z-index: 100;
+}
+
+.c-blog__image {
+  padding-top: 160%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 0 0 0;
+  position: relative;
+  z-index: 50;
+  border-radius: 30px 30px 30px 0;
+  overflow: hidden;
+}
+
+.c-blog__image--bg {
+  padding-top: 160%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 0 0 0;
+  position: relative;
+  width: 100%;
+  opacity: 0.46;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  z-index: 40;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+/* ____________________ ウィジウィグ用 - 記事 ____________________ */
+
+.article-cnt {
+  h1 {
+    color: black;
+    //text-align: center;
+    margin: 0 auto 30px;
+    font-size: 3.6rem;
+    @include mq($mqTAB01) {
+      font-size: 2.8rem;
+    }
+  }
+  h2 {
+    border-bottom: 2px solid $main-color01;
+    padding: 0 0 10px 0;
+    color: $main-color01;
+    margin: 0 auto 40px;
+    font-size: 2.8rem;
+  }
+  h3 {
+    border-left: 7px solid $main-color01;
+    font-size: 2.4rem;
+    margin: 0 0 30px;
+    padding: 0 0 0 10px;
+    font-weight: normal;
+    position: relative;
+    line-height: 30px;
+    &::before {
+      content: '';
+      background-color: $nav-color01;
+      position: absolute;
+      height: 15px;
+      width: 7px;
+      top: 0;
+      left: -7px;
+    }
+  }
+}
+

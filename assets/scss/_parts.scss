@@ -1,0 +1,116 @@
+/* Button */
+@mixin c-btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 10px 0;
+  border-radius: 7px;
+  letter-spacing: 0.05em;
+  transition: all .3s;
+  cursor: pointer;
+  @include mq($mqSP01) {
+    width: 100%;
+  }
+}
+@mixin main-btn {
+  width: 340px;
+  border: 1px solid $main-color01;
+  background-color: $main-color01;
+  color: #fff;
+  &:hover {
+    border: 1px solid $main-color01;
+    background-color: #fff;
+    color: $main-color01;
+  }
+}
+@mixin sub-btn {
+  width: 180px;
+  border: 1px solid $main-color01;
+  background-color: #fff;
+  color: $main-color01;
+  &:hover {
+    border: 1px solid $main-color01;
+    background-color: $main-color01;
+    color: #fff;
+  }
+}
+
+.c-btn {
+  .btn01 {
+    @include c-btn;
+    @include main-btn;
+  }
+  .btn02 {
+    @include c-btn;
+    @include sub-btn;
+  }
+}
+
+
+
+/* ____________________ PAGER / ページ送り ____________________ */
+
+.pager {
+  margin: 0 auto;
+  .page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $main-color02;
+        border: 1px solid $main-color02;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+        transition: all .4s;
+        &:hover {
+          color: #fff;
+          border: 1px solid $main-color02;
+          background-color: $main-color02;
+        }
+      }
+      .current {
+        background-color: $main-color02;
+        border: 1px solid $main-color02;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: all .4s;
+        margin-right: 10px;
+        &:hover {
+          opacity: .8;
+        }
+      }
+      .prev {
+        margin-right: 35px;
+      }
+      .next {
+        margin-left: 25px;
+        margin-right: 0;
+        text-align: right;
+      }
+      .next, .prev {
+        border: none;
+        background-color: none;
+        color: $main-color02;
+        display: block;
+        &:hover {
+          border: none;
+          background-color: unset;
+          color: $main-color02;
+        }
+        img {
+          width: 6px;
+        }
+      }
+    }
+  }
+}

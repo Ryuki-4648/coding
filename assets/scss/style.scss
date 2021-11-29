@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+
+/* ____________________ DEFINE ____________________ */
+
+/* ----- Breakpoints ----- */
+$breakPC01: 1024;
+$breakPC02: 1400;
+$breakTAB01: 767;
+$breakSP01: 599;
+
+$mqPC01: "(max-width: #{$breakPC01}px)";
+$mqPC02: "(max-width: #{$breakPC02}px)";
+$mqTAB01: "(max-width: #{$breakTAB01}px)";
+$mqSP01: "(max-width: #{$breakSP01}px)";
+
+@mixin mq($break) {
+  @media screen and #{$break} {
+    @content;
+  }
+}
+
+/* ----- Colors ----- */
+$main-color01: #bd0023;
+$main-color02: #003cbd;
+$contents-color01: #F2F7FF;
+$contents-color02: #f3f8fb;
+$nav-color01:#21282b;
+$font-color01: #333;
+$border-color01: #777;
+
+/* ____________________ IMPORT ____________________ */
+
+@import 'layout';
+@import 'parts';
+@import 'nav';
+@import 'footer';
+@import 'styleguide';
+@import 'animation';
+@import 'switch';
+@import 'utility/utilities';
+
+
+/* ____________________ COMMON ____________________ */
+
+/* ----- headline ----- */
+.hl-01 {
+  color: black;
+  //text-align: center;
+  margin: 0 auto 30px;
+  font-size: 3.6rem;
+  @include mq($mqTAB01) {
+    font-size: 2.8rem;
+  }
+}
+
+.hl-02 {
+  color: black;
+  //text-align: center;
+  margin: 0 auto 40px;
+  font-size: 2.8rem;
+  @include mq($mqTAB01) {
+    font-size: 2.4rem;
+  }
+}
+
+.hl-03 {
+  color: black;
+  font-size: 14px;
+  //text-align: center;
+  margin: 0 auto 50px;
+  font-size: 2.4rem;
+  @include mq($mqTAB01) {
+    font-size: 1.8rem;
+  }
+}
+
+.hl-ul {
+  border-bottom: 2px solid $main-color01;
+  padding: 0 0 10px 0;
+  color: $main-color01;
+  margin: 0 auto 40px;
+  font-size: 2.8rem;
+}
+
+.hl-lb {
+  border-left: 7px solid $main-color01;
+  font-size: 2.4rem;
+  margin: 0 0 30px;
+  padding: 0 0 0 10px;
+  font-weight: normal;
+  position: relative;
+  line-height: 30px;
+  &::before {
+    content: '';
+    background-color: $nav-color01;
+    position: absolute;
+    height: 15px;
+    width: 7px;
+    top: 0;
+    left: -7px;
+  }
+}
+
+
+/* ----- inner ----- */
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+  @include mq($mqPC01) {
+    width: 95%;
+  }
+}
+
+.inner02 {
+  width: 900px;
+  margin: 0 auto;
+  @include mq($mqPC01) {
+    width: 90%;
+  }
+}
+
+
+/* ____________________ CONTENTS ____________________ */
+
+
+/* ----- page top  ----- */
+.page-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  color: #fff;
+  background-color: $main-color01;
+  border: 2px solid $main-color01;
+  transition: all .3s;
+  &:hover {
+    background-color: #fff;
+    .arrow {
+      &::before {
+        color: $main-color01;
+      }
+    }
+  }
+
+  .arrow {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    &::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 600;
+      content: '\f062';
+      font-size: 20px;
+      color: #fff;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: -3px;
+      bottom: 0;
+      right: 0;
+      left: -4px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
+
+
+.list-01 {
+  &__item {
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

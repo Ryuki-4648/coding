@@ -13,7 +13,6 @@
 
   <!-- Meta Description -->
   <meta name="Description" content="">
-  <meta name="Keywords" content="">
 
   <!-- Fonts -->
 
@@ -173,49 +172,32 @@
     </div>
   </section>
 
-  <section class="c-cnt" id="img-switch">
-    <div class="inner">
-      <div id="mainImg" class="main-img">
-        <img src="/assets/img/dummy/dummy06.png" alt="">
-      </div>
-      <ul id="thumbImg" class="thumb-img">
-        <li class="is-current">
-          <img src="/assets/img/dummy/dummy06.png" alt="">
-        </li>
-        <li>
-          <img src="/assets/img/dummy/dummy07.png" alt="">
-        </li>
-        <li>
-          <img src="/assets/img/dummy/dummy08.png" alt="">
-        </li>
-      </ul>
-    </div>
-  </section>
-
   <section class="c-cnt" id="tab-switch">
     <div class="inner">
       <div class="tabs">
-        <input id="all" type="radio" name="tab_item" checked>
-        <label class="tab_item color01" for="all">総合</label>
-        <input id="programming" type="radio" name="tab_item">
-        <label class="tab_item color02" for="programming">プログラミング</label>
-        <input id="design" type="radio" name="tab_item">
-        <label class="tab_item color03" for="design">デザイン</label>
-        <div class="tab_content color01" id="all_content">
-          <div class="tab_content_description">
+        <input id="all" type="radio" name="tabs__item" checked>
+        <label class="tabs__item color01" for="all">総合</label>
+        <input id="programming" type="radio" name="tabs__item">
+        <label class="tabs__item color02" for="programming">プログラミング</label>
+        <input id="design" type="radio" name="tabs__item">
+        <label class="tabs__item color03" for="design">デザイン</label>
+        
+        <div class="tabs__content color01" id="all_content">
+          <div class="tabs__content--description">
             <p class="c-txtsp">総合の内容がここに入ります</p>
           </div>
         </div>
-        <div class="tab_content color02" id="programming_content">
-          <div class="tab_content_description">
+        <div class="tabs__content color02" id="programming_content">
+          <div class="tabs__content--description">
             <p class="c-txtsp">プログラミングの内容がここに入ります</p>
           </div>
         </div>
-        <div class="tab_content color03" id="design_content">
-          <div class="tab_content_description">
+        <div class="tabs__content color03" id="design_content">
+          <div class="tabs__content--description">
             <p class="c-txtsp">デザインの内容がここに入ります</p>
           </div>
         </div>
+        
       </div>
     </div>
   </section>

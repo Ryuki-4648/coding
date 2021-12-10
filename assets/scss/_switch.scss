@@ -55,12 +55,14 @@
 }
 
 /* 切り替え03 */
-/*タブ切り替え全体のスタイル*/
 .tabs {
   margin-top: 50px;
   padding-bottom: 40px;
   background-color: #fff;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   .color01 {
     background-color: #fff65e;
   }
@@ -70,50 +72,49 @@
   .color03 {
     background-color: #f5b6b5;
   }
+  label {
+    width: calc(600px/3);
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    @include mq($mqTAB01) {
+      width: calc(100%/3);
+    }
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+  &__content {
+    display: none;
+    padding: 40px;
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
-/*タブのスタイル*/
-.tab_item {
-  width: calc(100%/3);
-  height: 50px;
-  line-height: 50px;
-  font-size: 16px;
-  text-align: center;
-  color: #565656;
-  display: block;
-  float: left;
-  text-align: center;
-  font-weight: bold;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-.tab_item:hover {
-  opacity: 0.75;
-}
-
-/*ラジオボタンを全て消す*/
-input[name="tab_item"] {
+input[name="tabs__item"] {
   display: none;
 }
-
-/*タブ切り替えの中身のスタイル*/
-.tab_content {
-  display: none;
-  padding: 40px;
-  clear: both;
-  overflow: hidden;
-}
-
-
-/*選択されているタブのコンテンツのみを表示*/
 #all:checked ~ #all_content,
 #programming:checked ~ #programming_content,
 #design:checked ~ #design_content {
   display: block;
 }
 
-/*選択されているタブのスタイルを変える*/
-.tabs input:checked + .tab_item {
+/*
+~:親要素が同じになる兄弟関係の弟に適用されるセレクタ
+*/
+
+.tabs input:checked + .tabs__item {
 }
-.tabs input:checked + .tab_content{
+.tabs input:checked + .tabs__content{
 }

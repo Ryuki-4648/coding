@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google Analytics -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- View Port -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>Styleguide</title>
+
+  <!-- Meta Description -->
+  <meta name="Description" content="idol design labo.">
+
+  <!-- Fonts -->
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/common.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/common/favicon.ico">
+
+  <!-- Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/apple-touch-icon.png">
+
+  <!-- OGP -->
+  <meta name="og:url" content="">
+  <meta name="og:title" content="">
+  <meta name="og:image" content="http:///assets/img/common/ogp_img.png">
+  <meta name="og:description" content="">
+  <meta name="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+</head>
+
+<body>
+
+  <!-- ▼ header ▼ -->
+  
+  <!-- ▲ pc /.header ▲ -->
+
+  <!-- ▼ sp navigation ▼ -->
+  
+  <!-- ▲ sp /.nav-sp ▲ -->
+
+  <div class="l-container p-top">
+
+    <section class="p-top__mv">
+      <div class="p-top__mv__bg">
+        <div class="p-top__mv__box">
+          <img src="assets/img/dummy/dummy_circle01.png" alt="idol design laboのロゴ画像 (website logo image)" class="p-top__mv__img">
+          <p class="p-top__mv__msg">アイドルのすばらしさをひろめたい</p>
+        </div>
+        <div class="p-top__mv__line">
+          <span>view</span>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div class="inner">
+  
+        <div class="wrapper">
+  
+          <section class="about c-box l-layout01">
+            <h2 class="c-hl02">ABOUT</h2>
+            <p class="about__msg">アイドルのすばらしさを広める活動を行っています。</p>
+          </section>
+  
+          <section class="bio c-box l-layout01">
+            <h2 class="c-hl02">BIO</h2>
+            <p class="bio__explain">アイドル大好きおじさん</p>
+            <div class="bio__writer">
+              <span class="bio__writer--txt">WRITER</span>
+              <img src="assets/img/dummy/dummy_circle01.png" alt="" class="bio__writer--img">
+              <p class="bio__writer--name">yuki</p>
+            </div>
+            <div class="c-btnArea">
+              <button class="c-btn type01 is-open">DETAIL</button>
+            </div>
+            <div id="overlay" class="overlay"></div>
+            <div class="bio__open">
+              <button class="is-close button-close">×</button>
+              <img src="assets/img/dummy/dummy_circle01.png" alt="" class="bio__open--img">
+              <p class="bio__open--name bio__writer--name">yuki</p>
+              <p class="bio__open--msg">乃木坂、櫻坂、日向坂のオタク。NMB48、ももクロ、NiziU他アイドル全般すき。<br>普段はWeb制作やCMS構築をしています。</p>
+              <div class="c-btnArea">
+                <a href="" class="c-btn type01" target="_blank">PORTFOLIO SITE</a>
+              </div>
+            </div>
+          </section>
+  
+          <section class="day c-box l-layout01">
+            <h2 class="c-hl02">WHAT'S DAY?</h2>
+            <p class="current-msg">今日は<span id="currentDay"></span>です。</p>
+            <p class="month-msg">今月は<span id="month"></span>月です。</p>
+            <p class="day-msg"><span id="specialDay"></span>です。</p>
+            <p class="sche-msg">放送予定：今日は「<span id="schedule"></span>」があります。</p>
+          </section>
+        </div>
+  
+        <section class="oshimen c-box">
+          <div class="oshimen__wrap">
+            <h2 class="c-hl02 color01" id="oshiLabel">OSHIMEN</h2>
+            <div class="oshimen__image">
+              <img src="assets/img/dummy/dummy05.png" alt="推しメンのイラスト" id="oshiImg">
+            </div>
+            <div class="oshimen__detail">
+              <h3 id="oshiName" class="oshimen__detail--name">与田 祐希</h3><span id="oshiYomi" class="oshimen__detail--yomi">YUKI YODA</span>
+              <dl>
+                <dt class="oshimen__detail--nick">NICK NAME</dt>：
+                <dd id="oshiNick">与田ちゃん</dd>
+              </dl>
+              <dl>
+                <dt class="oshimen__detail--group">GROUP</dt>：
+                <dd id="oshiGroup">乃木坂46</dd>
+              </dl>
+              <dl>
+                <dt class="oshimen__detail--birth">BIRTH DAY</dt>：
+                <dd id="oshiBirth">2000.05.05</dd>
+              </dl>
+              <dl>
+                <dt class="oshimen__detail--remarks">REMARKS</dt>：
+                <dd id="oshiRemarks">朝ご飯は馬刺し。実家でヤギを飼っている。</dd>
+                <!-- 絵を描くのがうまい、絵描きの嘉喜。 -->
+              </dl>
+            </div>
+          </div>
+        </section>
+  
+        <div class="wrapper">
+          <section class="blog c-box">
+            <p>アイドルとデザインのこと</p>
+            <p>Web制作についても書いています</p>
+            <div class="c-btn">
+              <a href="" class="btn01">READ BLOG</a>
+            </div>
+            <div class="blog__index">
+              <h2 class="c-hl02">BLOG</h2>
+            </div>
+          </section>
+    
+          <section class="song c-box">
+            <div class="song__index">
+              <h2 class="c-hl02">RECOMMEND</h2>
+            </div>
+            <p id="songLyric">歌詞がここに入ります歌詞がここに入ります</p>
+            <span id="songName">避雷針</span>
+            <!--<span id="groupName">欅坂46</span>
+            <p>わたしの好きなアイドルソング</p>-->
+          </section>
+        </div>
+  
+  
+        <div class="wrapper">
+          <section class="saying c-box">
+            <p class="saying__comment" id="memberWord"></p>
+            <p class="saying__member">―<span id="memberName"></span></p>
+          </section>
+          <section class="sns c-box">
+            <div class="sns__wrap">
+              <div class="sns__index">
+                <h2 class="c-hl02">SNS</h2>
+              </div>
+              <ul class="icon">
+                <li class="icon__item">
+                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li class="icon__item">
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="icon__item">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+  
+        <section class="works c-box">
+          <div class="works__wrap">
+            <div class="works__index">
+              <h2 class="c-hl02">WORKS</h2>
+            </div>
+            <div class="works__comment">
+              <p class="">たまになんか作ります。</p>
+            </div>
+          </div>
+          <ul class="works__list">
+            <li class="works__item">
+              <a href="">
+                <div class="cnt">
+                  <img src="assets/img/dummy/dummy05.png" alt="" class="works__item--image">
+                  <div class="detail">
+                    <h3>ほろよいメーター</h3>
+                    <p>お酒もっと、たのしく。<br>カンタン酔い度チェッカー</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="works__item">
+              <a href="">
+                <div class="cnt">
+                  <img src="assets/img/dummy/dummy05.png" alt="" class="works__item--image">
+                  <div class="detail">
+                    <h3>握手会スケジュール管理</h3>
+                    <p>CD買いすぎて握手会のスケジュールがわからないとき用</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="works__item">
+              <a href="">
+                <div class="cnt">
+                  <img src="assets/img/dummy/dummy05.png" alt="" class="works__item--image">
+                  <div class="detail">
+                    <h3>握手会スケジュール管理</h3>
+                    <p>握手会スケジュール管理</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+  
+  
+      </div>
+  
+    </main>
+  </div>
+
+
+  <div class="page-top"><a href="#" class="arrow"></a></div>
+
+  <!-- ▼ footer ▼ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <ul>
+        <li><a href=""></a></li>
+      </ul>
+      <p>&copy;idol design labo CO.,INC ALL RIGHTS RESERVED.</p>
+      <p>by <a href="" target="_blank">yuki works</a></p>
+    </div>
+  </footer>
+  <!-- ▲ footer ▲ -->
+
+  <!-- js -->
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/common.js"></script>
+</body>
+</html>

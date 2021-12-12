@@ -77,7 +77,7 @@ p {
       
     }
     &__img {
-      width: 146px;
+      width: 100px;
     }
     &__msg {
       display: block;
@@ -91,10 +91,10 @@ p {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 0;
+      bottom: 10px;
       display: block;
-      height: 65px;
-      z-index: 49;
+      height: 46px;
+      z-index: 46;
       transition: all .3s;
       span {
         display: block;
@@ -151,6 +151,12 @@ p {
 
 .l-layout {
   &01 {
+    width: 48%;
+    @include mq($mqPC01) {
+      width: 100%;
+    }
+  }
+  &02 {
     width: 32%;
     @include mq($mqPC01) {
       width: 100%;
@@ -183,7 +189,8 @@ p {
   }
   &__writer {
     display: flex;
-    margin: 0 auto 30px;
+    margin: 0 auto;
+    align-items: center;
     &--txt {
       border-left: 1px solid #1f1f1f;
       padding: 0 0 0 8px;
@@ -231,6 +238,9 @@ p {
       line-height: 2;
       margin: 0 auto 40px;
     }
+  }
+  .c-btnArea {
+    margin-left: auto;
   }
   .button-close {
     position: absolute;
@@ -308,17 +318,20 @@ p {
   }
   &__image {
     img {
-      height: 200px;
+      height: 250px;
     }
   }
   &__detail {
-    padding: 20px 0 0 40px;
+    padding: 20px 40px;
     dl {
       font-size: 1.6rem;
       letter-spacing: 0.1em;
       display: flex;
       dt {
-        width: 100px;
+        width: 200px;
+      }
+      dd {
+        width: 80%;
       }
     }
     &--name {
@@ -346,15 +359,11 @@ p {
 }
 
 .blog {
-  width: 48%;
   padding: 20px;
   @include mq($mqTAB01) {
-    width: 100%;
   }
-  &__index {
-    border-top: 1px solid #1f1f1f;
-    padding: 20px 0 0 0;
-    margin: 20px auto 0;
+  &__txt {
+    margin: 0 auto 30px;
   }
 }
 
@@ -364,10 +373,12 @@ p {
   @include mq($mqTAB01) {
     width: 100%;
   }
-  &__index {
-    border-bottom: 1px solid #1f1f1f;
-    padding: 0 0 20px 0;
-    margin: 0 auto 20px;
+  &__lyric {
+    font-size: 1.8rem;
+    margin: 0 0 30px 0;
+  }
+  &__ttl {
+    font-size: 1.6rem;
   }
 }
 
@@ -376,15 +387,14 @@ p {
   padding: 15px;
   &__comment {
     font-size: 1.8rem;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
   }
   &__member {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
 .sns {
-  width: 48%;
   .c-hl02 {
     text-align: center;
     margin: 20px 0;
@@ -515,10 +525,22 @@ p {
 
 }
 
+// index
+.c-index {
+  &01 {
+    border-bottom: 1px solid #1f1f1f;
+    padding: 0 0 20px 0;
+    margin: 0 auto 20px;
+    .c-hl02 {
+      color: #1f1f1f;
+      text-align: center;
+      letter-spacing: 0.15em;
+    }
+  }
+}
 
 // c-btn
 .c-btnArea {
-  text-align: center;
   .c-btn {
     cursor: pointer;
     &.type {
@@ -528,8 +550,8 @@ p {
         background-color: #fafafa;
         font-size: 1.4rem;
         letter-spacing: 0.05em;
-        width: 200px;
-        line-height: 46px;
+        width: 140px;
+        line-height: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -538,5 +560,21 @@ p {
         }
       }
     }
+  }
+}
+
+
+.tri {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #E66F89;
+    height: 1px;
+    width: 40px;
+    transform: rotate(-45deg);
+    right: -6px;
+    bottom: 12px;
   }
 }

@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Title -->
-  <title>IDOL DESIGN LABO</title>
+  <title>IDOL DESIGN LABO.</title>
 
   <!-- Meta Description -->
   <meta name="Description" content="idol design labo.">
@@ -57,7 +57,7 @@
     <section class="p-top__mv">
       <div class="p-top__mv__bg">
         <div class="p-top__mv__box">
-          <img src="assets/img/dummy/dummy_circle01.png" alt="idol design laboのロゴ画像 (website logo image)" class="p-top__mv__img">
+          <img src="assets/img/common/img_logo.png" alt="idol design laboのロゴ画像 (website logo image)" class="p-top__mv__img">
           <p class="p-top__mv__msg">アイドルのすばらしさをひろめたい</p>
         </div>
         <div class="p-top__mv__line">
@@ -76,39 +76,16 @@
             <p class="about__msg">アイドルのすばらしさを広める活動を行っています。</p>
           </section>
   
-          <section class="bio c-box l-layout01">
-            <h2 class="c-hl02">BIO</h2>
-            <p class="bio__explain">アイドル大好きおじさん</p>
-            <div class="bio__writer">
-              <span class="bio__writer--txt">WRITER</span>
-              <img src="assets/img/dummy/dummy_circle01.png" alt="" class="bio__writer--img">
-              <p class="bio__writer--name">yuki</p>
-            </div>
-            <div class="c-btnArea">
-              <button class="c-btn type01 is-open">DETAIL</button>
-            </div>
-            <div id="overlay" class="overlay"></div>
-            <div class="bio__open">
-              <button class="is-close button-close">×</button>
-              <img src="assets/img/dummy/dummy_circle01.png" alt="" class="bio__open--img">
-              <p class="bio__open--name bio__writer--name">yuki</p>
-              <p class="bio__open--msg">乃木坂、櫻坂、日向坂のオタク。NMB48、ももクロ、NiziU他アイドル全般すき。<br>普段はWeb制作やCMS構築をしています。</p>
-              <div class="c-btnArea">
-                <a href="" class="c-btn type01" target="_blank">PORTFOLIO SITE</a>
-              </div>
-            </div>
-          </section>
-  
           <section class="day c-box l-layout01">
             <h2 class="c-hl02">WHAT'S DAY?</h2>
             <p class="current-msg">今日は<span id="currentDay"></span>です。</p>
             <p class="month-msg">今月は<span id="month"></span>月です。</p>
             <p class="day-msg"><span id="specialDay"></span>です。</p>
-            <p class="sche-msg">放送予定：今日は「<span id="schedule"></span>」があります。</p>
+            <p class="sche-msg">放送予定：<span id="schedule"></span>があります。</p>
           </section>
         </div>
   
-        <section class="oshimen c-box">
+        <section class="oshimen c-box tri">
           <div class="oshimen__wrap">
             <h2 class="c-hl02 color01" id="oshiLabel">OSHIMEN</h2>
             <div class="oshimen__image">
@@ -136,37 +113,107 @@
             </div>
           </div>
         </section>
-  
-        <div class="wrapper">
-          <section class="blog c-box">
-            <p>アイドルとデザインのこと</p>
-            <p>Web制作についても書いています</p>
-            <div class="c-btn">
-              <a href="" class="btn01">READ BLOG</a>
-            </div>
-            <div class="blog__index">
-              <h2 class="c-hl02">BLOG</h2>
-            </div>
-          </section>
     
-          <section class="song c-box">
-            <div class="song__index">
-              <h2 class="c-hl02">RECOMMEND</h2>
+        <div class="wrapper">
+          <section class="saying c-box l-layout01 tri">
+            <div class="c-index01">
+              <h2 class="c-hl02">WORDS</h2>
             </div>
-            <p id="songLyric">歌詞がここに入ります歌詞がここに入ります</p>
-            <span id="songName">避雷針</span>
+            <p class="saying__comment">「<span id="memberWord"></span>」</p>
+            <p class="saying__member">- <span id="memberName"></span></p>
+          </section>
+          <section class="song c-box l-layout01 tri">
+            <div class="c-index01">
+              <h2 class="c-hl02">LYRICS</h2>
+            </div>
+            <p class="song__lyric" id="songLyric"></p>
+            <p class="song__ttl">- "<span id="songName"></span>"</p>
             <!--<span id="groupName">欅坂46</span>
             <p>わたしの好きなアイドルソング</p>-->
           </section>
         </div>
   
-  
+        <section class="works c-box">
+          <div class="works__wrap">
+            <div class="works__index">
+              <h2 class="c-hl02">WEBSITE</h2>
+            </div>
+            <div class="works__comment">
+              <p class="">アイドルグループの推しサイト</p>
+            </div>
+          </div>
+          <ul class="works__list">
+            <li class="works__item">
+              <a href="">
+                <div class="cnt">
+                  <img src="assets/img/dummy/dummy05.png" alt="" class="works__item--image">
+                  <div class="detail">
+                    <h3>日向坂46</h3>
+                    <p>一番デザインが好きです。デザイナーの本気を感じます。日向坂を、推すしかない。</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="works__item">
+              <a href="">
+                <div class="cnt">
+                  <img src="assets/img/dummy/dummy05.png" alt="" class="works__item--image">
+                  <div class="detail">
+                    <h3>櫻坂46</h3>
+                    <p>CSSを使った装飾がうまく、儚げで美しいデザインが素敵です。</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="works__item">
+              <a href="">
+                <div class="cnt">
+                  <img src="assets/img/dummy/dummy05.png" alt="" class="works__item--image">
+                  <div class="detail">
+                    <h3>=LOVE</h3>
+                    <p>グループのイメージにぴったりな可憐なデザインが最高。「かわいい」の権化。</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
         <div class="wrapper">
-          <section class="saying c-box">
-            <p class="saying__comment" id="memberWord"></p>
-            <p class="saying__member">―<span id="memberName"></span></p>
+          <section class="bio c-box l-layout02">
+            <h2 class="c-hl02">BIO</h2>
+            <p class="bio__explain">アイドル大好きおじさん</p>
+            <div class="bio__writer">
+              <span class="bio__writer--txt">WRITER</span>
+              <img src="assets/img/dummy/dummy_circle01.png" alt="" class="bio__writer--img">
+              <p class="bio__writer--name">yuki</p>
+              <div class="c-btnArea">
+                <button class="c-btn type01 is-open">DETAIL</button>
+              </div>
+            </div>
+            <div id="overlay" class="overlay"></div>
+            <div class="bio__open">
+              <button class="is-close button-close">×</button>
+              <img src="assets/img/dummy/dummy_circle01.png" alt="" class="bio__open--img">
+              <p class="bio__open--name bio__writer--name">yuki</p>
+              <p class="bio__open--msg">乃木坂、櫻坂、日向坂のオタク。<br>NMB48、ももクロ、NiziU他アイドル全般すき。</p>
+              <div class="c-btnArea">
+                <a href="" class="c-btn type01" target="_blank">PORTFOLIO</a>
+              </div>
+            </div>
           </section>
-          <section class="sns c-box">
+  
+          <section class="blog c-box l-layout02">
+            <div class="c-index01">
+              <h2 class="c-hl02">BLOG</h2>
+            </div>
+            <p class="blog__txt">アイドルとデザインについて</p>
+            <div class="c-btnArea">
+              <a href="https://www.idol-plus.net" class="c-btn type01" target="_blank">READ BLOG</a>
+            </div>
+          </section>
+  
+          <section class="sns c-box l-layout02">
             <div class="sns__wrap">
               <div class="sns__index">
                 <h2 class="c-hl02">SNS</h2>
@@ -186,52 +233,6 @@
           </section>
         </div>
   
-        <section class="works c-box">
-          <div class="works__wrap">
-            <div class="works__index">
-              <h2 class="c-hl02">WORKS</h2>
-            </div>
-            <div class="works__comment">
-              <p class="">たまになんか作ります。</p>
-            </div>
-          </div>
-          <ul class="works__list">
-            <li class="works__item">
-              <a href="">
-                <div class="cnt">
-                  <img src="assets/img/dummy/dummy05.png" alt="" class="works__item--image">
-                  <div class="detail">
-                    <h3>ほろよいメーター</h3>
-                    <p>お酒もっと、たのしく。<br>カンタン酔い度チェッカー</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="works__item">
-              <a href="">
-                <div class="cnt">
-                  <img src="assets/img/dummy/dummy05.png" alt="" class="works__item--image">
-                  <div class="detail">
-                    <h3>握手会スケジュール管理</h3>
-                    <p>CD買いすぎて握手会のスケジュールがわからないとき用</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="works__item">
-              <a href="">
-                <div class="cnt">
-                  <img src="assets/img/dummy/dummy05.png" alt="" class="works__item--image">
-                  <div class="detail">
-                    <h3>握手会スケジュール管理</h3>
-                    <p>握手会スケジュール管理</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-  
   
       </div>
   
@@ -247,7 +248,7 @@
       <ul>
         <li><a href=""></a></li>
       </ul>
-      <p>&copy;idol design labo CO.,INC ALL RIGHTS RESERVED.</p>
+      <p>&copy;idol design labo ALL RIGHTS RESERVED.</p>
       <p>by <a href="" target="_blank">yuki works</a></p>
     </div>
   </footer>
@@ -255,6 +256,7 @@
 
   <!-- js -->
   <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/list.js"></script>
   <script src="/assets/js/common.js"></script>
 </body>
 </html>

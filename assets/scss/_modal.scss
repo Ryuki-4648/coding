@@ -1,0 +1,72 @@
+/* _________________ Modal Window _________________ */
+
+.modal {
+  &__btn {
+    position: absolute;
+    color: $main-color01;
+    top: 15px;
+    transition: all .3s;
+    @include mq($mqTAB01) {
+      top: 10px;
+    }
+    &:hover {
+      color: $main-color01;
+    }
+  }
+  &__open {
+    display: block;
+    font-size: 2.4rem;
+    right: 20px;
+    @include mq($mqTAB01) {
+      right: 5%;
+      font-size: 1.8rem;
+    }
+  }
+  &__close {
+    right: 20px;
+    font-size: 4rem;
+    font-weight: bold;
+    @include mq($mqTAB01) {
+      font-size: 3rem;
+      right: 3%;
+    }
+  }
+  &__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  &__window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    text-align: center;
+    @include mq($mqTAB01) {
+      width: 90%;
+    }
+  }
+}
+
+#link-modal {
+  .flex-01 {
+    &__img {
+      position: relative;
+      @include mq($mqTAB01) {
+        margin: 0 auto 10px;
+      }
+      img {
+        @include mq($mqTAB01) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

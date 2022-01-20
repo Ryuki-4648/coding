@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google Analytics -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- View Port -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>モーダルウィンドウ | Styleguide | Web制作でよく使うレイアウト集</title>
+
+  <!-- Meta Description -->
+  <meta name="Description" content="">
+
+  <!-- Fonts -->
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/common/favicon.ico">
+
+  <!-- Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/apple-touch-icon.png">
+
+  <!-- OGP -->
+  <meta name="og:url" content="">
+  <meta name="og:title" content="">
+  <meta name="og:image" content="http:///assets/img/common/ogp_img.png">
+  <meta name="og:description" content="">
+  <meta name="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+</head>
+
+<body>
+
+  <!-- ▼ header ▼ -->
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__logo"><a href="/"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ"></a></div>
+      <div class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="/index.html" class="nav-link">トップ</a></li>
+          <li class="header__item"><a href="/animation.html" class="nav-link">アニメーション</a></li>
+          <li class="header__item"><a href="/effect.html" class="nav-link">エフェクト</a></li>
+          <li class="header__item"><a href="/form.html" class="nav-link">フォーム</a></li>
+          <li class="header__item"><a href="/list.html" class="nav-link">リスト</a></li>
+          <li class="header__item"><a href="/js_sort.html" class="nav-link">ソート</a></li>
+          <li class="header__item"><a href="/switch.html" class="nav-link">切り替え</a></li>
+          <li class="header__item"><a href="/modal/jq.html" class="nav-link">モーダル</a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- ▲ pc /.header ▲ -->
+
+  <!-- ▼ sp navigation ▼ -->
+  <nav class="nav-sp">
+    <div class="nav-sp__logo"><a href="/" class="nav-sp__logo--link"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img"></a></div>
+    <div class="nav-sp__wrap">
+      <div class="nav-sp__cnt01 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__cnt02 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="nav-sp__menu">
+      <div class="nav-sp__logo nav-sp__menu--open">
+        <a href="/index.html" class="nav-sp__logo--link">
+          <img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img">
+        </a>
+      </div>
+
+      <ul class="nav-sp__list">
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ▲ sp /.nav-sp ▲ -->
+
+  <br><br><br><br><br>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <div class="c-block block-04">
+        <ul class="c-block__list block-04__list">
+          <li class="c-block__item block-04__item">
+            <div class="c-btn ta-Center"><a href="/modal/jq.html" class="btn01" style="width: 100%;">モーダル（jQuery）</a></div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="c-btn ta-Center"><a href="/modal/js.html" class="btn01" style="width: 100%;">モーダル（js）</a></div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-04 -->
+    </div>
+  </section>
+
+  <section class="c-cnt" id="link-modal">
+    <div class="inner">
+
+      <div class="flex-01">
+        <div class="flex-01__img">
+          <button class="js-open modal__open modal__btn" data-target="img-01"><i class="fas fa-search-plus"></i></button>
+          <img src="/assets/img/dummy/dummy06.png" alt="">
+        </div>
+        <div class="flex-01__txt">
+          <p class="txt-ttl">見出し見出し見出し</p>
+          <p class="txt-msg">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+        </div>
+      </div>
+
+      <br><br><br>
+
+      <div class="flex-01 flex-reverse">
+        <div class="flex-01__img">
+          <button class="js-open modal__open modal__btn" data-target="img-02"><i class="fas fa-search-plus"></i></button>
+        <img src="/assets/img/dummy/dummy07.png" alt="">
+        </div>
+        <div class="flex-01__txt">
+          <p class="txt-ttl">見出し見出し見出し</p>
+          <p class="txt-msg">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+        </div>
+      </div>
+
+      <br><br><br>
+
+      <div class="flex-01">
+        <div class="flex-01__img">
+          <button class="js-open modal__open modal__btn" data-target="img-03"><i class="fas fa-search-plus"></i></button>
+          <img src="/assets/img/dummy/dummy08.png" alt="">
+        </div>
+        <div class="flex-01__txt">
+          <p class="txt-ttl">見出し見出し見出し</p>
+          <p class="txt-msg">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
+        </div>
+      </div>
+
+      <div class="modal">
+        <div id="overlay" class="modal__overlay"></div>
+        <div id="img-01" class="js-window modal__window">
+          <div class="img">
+            <img src="/assets/img/dummy/dummy06.png" alt="">
+            <button class="js-close modal__close modal__btn">×</button>
+          </div>
+        </div>
+        <div id="img-02" class="js-window modal__window">
+          <div class="img">
+            <img src="/assets/img/dummy/dummy07.png" alt="">
+            <button class="js-close modal__close modal__btn">×</button>
+          </div>
+        </div>
+        <div id="img-03" class="js-window modal__window">
+          <div class="img">
+            <img src="/assets/img/dummy/dummy08.png" alt="">
+            <button class="js-close modal__close modal__btn">×</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ▼ footer ▼ -->
+  <footer class="footer" id="page-footerlayout">
+    <div class="inner">
+      <div class="footer__wrap">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <a href="/"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="logo-img"></a>
+            <p class="name">会社名がここに入ります。</p>
+            <p class="address">〒000-0000<br>ここに会社の住所が入ります。<br>ここに会社の住所が入ります。ここに会社の住所が入ります。</p>
+          </div>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="">トップ</a></li>
+            <li class="footer__item"><a href="">会社概要</a></li>
+            <li class="footer__item"><a href="">事業案内</a></li>
+            <li class="footer__item"><a href="">お知らせ</a></li>
+            <li class="footer__item"><a href="">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="subMenu">
+        <ul class="subMenu__list">
+          <li class="subMenu__item"><a href="">個人情報保護</a></li>
+          <li class="subMenu__item"><a href="">資料請求</a></li>
+          <li class="subMenu__item"><a href="">サイトマップ</a></li>
+          <li class="subMenu__item"><a href="">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+      <div class="footer__cr">
+        <p>&copy;20XX 会社名 co.,ltd. All Right Reserved.</p>
+      </div>
+    </div>
+    
+  </footer>
+  <!-- ▲ footer ▲ -->
+
+  <!-- js -->
+  <script src="/assets/js/script.js"></script>
+  <script>
+    // Modal Window
+    $('.js-open').on('click', function(){
+      let target = $(this).data('target');
+      var modal = $(`#${target}`);
+      $(modal).fadeIn();
+      $('#overlay, .js-close').fadeIn();
+    });
+    $('.js-close').on('click', function(){
+      $('#overlay, .js-window, .js-close').fadeOut();
+    });
+  </script>
+</body>
+</html>

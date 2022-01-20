@@ -2465,12 +2465,17 @@ input[name="tabs__item"] {
           transform: translate(-50%, -50%);
   z-index: 11;
   text-align: center;
+  width: 40%;
 }
 
 @media screen and (max-width: 767px) {
   .modal__window {
     width: 90%;
   }
+}
+
+.modal__window img {
+  width: 100%;
 }
 
 #link-modal .flex-01__img {

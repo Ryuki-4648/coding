@@ -49,8 +49,12 @@
     transform: translate(-50%, -50%);
     z-index: 11;
     text-align: center;
+    width: 40%;
     @include mq($mqTAB01) {
       width: 90%;
+    }
+    img {
+      width: 100%;
     }
   }
 }

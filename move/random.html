@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ランダム | JS/JQ | Styleguide</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Meta Description -->
+  <meta name="Description" content="Web制作でよく使うレイアウトまとめ | Flexbox、ボタン、ホバー、見出し、リスト、テーブル、フォーム、アニメーション、html、css">
+
+  <!-- Fonts -->
+
+  <!-- Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/img/common/favicon.ico">
+
+  <!-- Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/apple-touch-icon.png">
+
+  <!-- OGP -->
+  <meta name="og:url" content="">
+  <meta name="og:title" content="">
+  <meta name="og:image" content="http:///assets/img/common/ogp_img.png">
+  <meta name="og:description" content="">
+  <meta name="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <meta property="fb:app_id" content="">
+</head>
+<body>
+
+  <style>
+    button {
+      font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+      background-color: #a08c50;
+      border: 2px solid #a08c50;
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      height: 60px;
+      width: 300px;
+      display: block;
+      margin: 0 auto 10px;
+      transition: all .3s;
+    }
+    button:hover {
+      background-color: #fffcf5;
+      border: 2px solid #a08c50;
+      color: #a08c50;
+    }
+    p {
+      font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+    }
+    .omikuji.is-active {
+      animation: shake 1.5s linear 0s infinite normal;
+    }
+    @keyframes shake {
+      0%,100% {
+        transform: rotate(10deg);
+      }
+      50% {
+        transform: rotate(-10deg);
+      }
+    }
+    #resultImg {
+      margin: 0 auto 30px;
+    }
+    #resultImg img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+  
+  <!-- ▼ header ▼ -->
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__logo"><a href="/"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ"></a></div>
+      <div class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="/index.html" class="nav-link">トップ</a></li>
+          <li class="header__item"><a href="/move/animation.html" class="nav-link">動き</a></li>
+          <li class="header__item"><a href="/effect.html" class="nav-link">エフェクト</a></li>
+          <li class="header__item"><a href="/form.html" class="nav-link">フォーム</a></li>
+          <li class="header__item"><a href="/list.html" class="nav-link">リスト</a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="header__item"><a href="" class="nav-link"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- ▲ pc /.header ▲ -->
+
+  <!-- ▼ sp navigation ▼ -->
+  <nav class="nav-sp">
+    <div class="nav-sp__logo"><a href="/" class="nav-sp__logo--link"><img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img"></a></div>
+    <div class="nav-sp__wrap">
+      <div class="nav-sp__cnt01 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__cnt02 nav-sp__cnt">
+        <a href="hoge"></a>
+      </div>
+      <div class="nav-sp__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="nav-sp__menu">
+      <div class="nav-sp__logo nav-sp__menu--open">
+        <a href="/index.html" class="nav-sp__logo--link">
+          <img src="/assets/img/common/img_logo01.svg" alt="ロゴ" class="nav-sp__logo--img">
+        </a>
+      </div>
+
+      <ul class="nav-sp__list">
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+        <li class="nav-sp__list--item"><a href="hoge" class="link-common link-main">メニュー<i class="fas fa-chevron-right"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ▲ sp /.nav-sp ▲ -->
+
+  <br><br><br><br><br>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <div class="c-block block-04">
+        <ul class="c-block__list block-04__list">
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/animation.html" class="btn01" style="width: 100%;">アニメーション</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/sort.html" class="btn01" style="width: 100%;">ソート</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/switch.html" class="btn01" style="width: 100%;">切り替え</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/modal/jq.html" class="btn01" style="width: 100%;">モーダル(jq)</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/modal/js.html" class="btn01" style="width: 100%;">モーダル(js)</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/random.html" class="btn01" style="width: 100%;">ランダム</a></div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-04 -->
+    </div>
+  </section>
+
+  <section class="c-cnt">
+    <div class="inner">
+      <div class="c-block block-04">
+        <ul class="c-block__list block-04__list">
+          <li class="c-block__item block-04__item">
+            <div class="c-btn ta-Center"><a href="#click-omikuji" class="btn01" style="width: 100%;">おみくじ</a></div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="c-btn ta-Center"><a href="" class="btn01" style="width: 100%;">（タイトル）</a></div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="c-btn ta-Center"><a href="" class="btn01" style="width: 100%;">（タイトル）</a></div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.c-block .block-04 -->
+    </div>
+  </section>
+
+  <section class="c-cnt" style="background-color: #e14a45; padding: 50px 0;" id="click-omikuji">
+    <div class="inner">
+      <p class="" style="color: #fff; font-size: 24px; letter-spacing: 0.05em; margin: 0 auto 20px; text-align: center;">ボタンをクリックしてください</p>
+
+      <div id="resultImg" class="omikuji ta-Center is-active"><img src="/assets/img/dummy/dummy_omijikuji01.png" alt=""></div>
+      <button id="buttonClick">おみくじを引く</button>
+      <button id="buttonReset">はじめに戻る</button>
+    </div>
+  </section>
+
+  <script>
+    const randomImgList = [
+      "/assets/img/dummy/dummy_number01.png",
+      "/assets/img/dummy/dummy_number02.png",
+      "/assets/img/dummy/dummy_number03.png",
+      "/assets/img/dummy/dummy_number04.png",
+      "/assets/img/dummy/dummy_number05.png",
+      "/assets/img/dummy/dummy_number06.png",
+      "/assets/img/dummy/dummy_number07.png",
+      "/assets/img/dummy/dummy_number08.png",
+      "/assets/img/dummy/dummy_number09.png",
+    ]
+
+    // おみくじを引くボタンを押したとき
+    $('#buttonClick').on('click', function(){
+      let randomNumber = Math.floor(Math.random() * randomImgList.length);
+      $(this).text('もう一度引く');
+      $('#resultImg').removeClass('is-active');
+      $('#resultImg img').attr('src', randomImgList[randomNumber]);
+      console.log(randomImgList[randomNumber]);
+    });
+
+    // リセットボタンを押したとき
+    $('#buttonReset').on('click', function(){
+      location.reload();
+    })
+  </script>
+</body>
+</html>

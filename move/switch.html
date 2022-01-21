@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Title -->
-  <title>モーダルウィンドウ | Styleguide | Web制作でよく使うレイアウト集</title>
+  <title>切り替え系 | Styleguide | Web制作でよく使うレイアウト集</title>
 
   <!-- Meta Description -->
   <meta name="Description" content="">
@@ -51,13 +51,10 @@
       <div class="header__nav">
         <ul class="header__list">
           <li class="header__item"><a href="/index.html" class="nav-link">トップ</a></li>
-          <li class="header__item"><a href="/animation.html" class="nav-link">アニメーション</a></li>
+          <li class="header__item"><a href="/move/animation.html" class="nav-link">動き</a></li>
           <li class="header__item"><a href="/effect.html" class="nav-link">エフェクト</a></li>
           <li class="header__item"><a href="/form.html" class="nav-link">フォーム</a></li>
           <li class="header__item"><a href="/list.html" class="nav-link">リスト</a></li>
-          <li class="header__item"><a href="/js_sort.html" class="nav-link">ソート</a></li>
-          <li class="header__item"><a href="/switch.html" class="nav-link">切り替え</a></li>
-          <li class="header__item"><a href="/modal/jq.html" class="nav-link">モーダル</a></li>
           <li class="header__item"><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
           <li class="header__item"><a href="" class="nav-link"><i class="fab fa-instagram"></i></a></li>
         </ul>
@@ -106,11 +103,23 @@
     <div class="inner">
       <div class="c-block block-04">
         <ul class="c-block__list block-04__list">
-          <li class="c-block__item block-04__item">
-            <div class="c-btn ta-Center"><a href="/modal/jq.html" class="btn01" style="width: 100%;">モーダル（jQuery）</a></div>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/animation.html" class="btn01" style="width: 100%;">アニメーション</a></div>
           </li>
-          <li class="c-block__item block-04__item">
-            <div class="c-btn ta-Center"><a href="/modal/js.html" class="btn01" style="width: 100%;">モーダル（js）</a></div>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/sort.html" class="btn01" style="width: 100%;">ソート</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/switch.html" class="btn01" style="width: 100%;">切り替え</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/modal/jq.html" class="btn01" style="width: 100%;">モーダル(jq)</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/modal/js.html" class="btn01" style="width: 100%;">モーダル(js)</a></div>
+          </li>
+          <li class="c-block__item block-04__item mb-10">
+            <div class="c-btn ta-Center"><a href="/move/random.html" class="btn01" style="width: 100%;">ランダム</a></div>
           </li>
         </ul>
       </div>
@@ -118,70 +127,106 @@
     </div>
   </section>
 
-  <section class="c-cnt" id="link-modal">
+  <section class="c-cnt">
     <div class="inner">
-
-      <div class="flex-01">
-        <div class="flex-01__img">
-          <button class="js-open modal__open modal__btn" data-target="img-01"><i class="fas fa-search-plus"></i></button>
-          <img src="/assets/img/dummy/dummy06.png" alt="">
-        </div>
-        <div class="flex-01__txt">
-          <p class="txt-ttl">見出し見出し見出し</p>
-          <p class="txt-msg">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
-        </div>
+      <div class="c-block block-04">
+        <ul class="c-block__list block-04__list">
+          <li class="c-block__item block-04__item">
+            <div class="c-btn ta-Center"><a href="#img-switch" class="btn01" style="width: 100%;">画像切り替え</a></div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="c-btn ta-Center"><a href="#movie-switch" class="btn01" style="width: 100%;">動画切り替え</a></div>
+          </li>
+          <li class="c-block__item block-04__item">
+            <div class="c-btn ta-Center"><a href="#tab-switch" class="btn01" style="width: 100%;">タブ切り替え</a></div>
+          </li>
+        </ul>
       </div>
-
-      <br><br><br>
-
-      <div class="flex-01 flex-reverse">
-        <div class="flex-01__img">
-          <button class="js-open modal__open modal__btn" data-target="img-02"><i class="fas fa-search-plus"></i></button>
-        <img src="/assets/img/dummy/dummy07.png" alt="">
-        </div>
-        <div class="flex-01__txt">
-          <p class="txt-ttl">見出し見出し見出し</p>
-          <p class="txt-msg">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
-        </div>
-      </div>
- 
-      <br><br><br>
-
-      <div class="flex-01">
-        <div class="flex-01__img">
-          <button class="js-open modal__open modal__btn" data-target="img-03"><i class="fas fa-search-plus"></i></button>
-          <img src="/assets/img/dummy/dummy08.png" alt="">
-        </div>
-        <div class="flex-01__txt">
-          <p class="txt-ttl">見出し見出し見出し</p>
-          <p class="txt-msg">テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。テキストがここに入ります。</p>
-        </div>
-      </div>
-
-      <div class="modal">
-        <div id="overlay" class="modal__overlay"></div>
-        <div id="img-01" class="js-window modal__window">
-          <div class="img">
-            <img src="/assets/img/dummy/dummy06.png" alt="">
-            <button class="js-close modal__close modal__btn">×</button>
-          </div>
-        </div>
-        <div id="img-02" class="js-window modal__window">
-          <div class="img">
-            <img src="/assets/img/dummy/dummy07.png" alt="">
-            <button class="js-close modal__close modal__btn">×</button>
-          </div>
-        </div>
-        <div id="img-03" class="js-window modal__window">
-          <div class="img">
-            <img src="/assets/img/dummy/dummy08.png" alt="">
-            <button class="js-close modal__close modal__btn">×</button>
-          </div>
-        </div>
-      </div>
+      <!-- /.c-block .block-04 -->
     </div>
   </section>
 
+  <section class="c-cnt" id="img-switch">
+    <div class="inner">
+      <div id="mainImg" class="main-img">
+        <img src="/assets/img/dummy/dummy06.png" alt="">
+      </div>
+      <ul id="thumbImg" class="thumb-img">
+        <li class="is-current">
+          <img src="/assets/img/dummy/dummy06.png" alt="">
+        </li>
+        <li>
+          <img src="/assets/img/dummy/dummy07.png" alt="">
+        </li>
+        <li>
+          <img src="/assets/img/dummy/dummy08.png" alt="">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-cnt" id="movie-switch">
+    <div class="inner">
+      <ul id="mainImg02" class="main-img">
+        <li class="is-current-movie">
+          <div class="movie-box">
+            <iframe data-scroll src="https://www.youtube.com/embed/qqDrQymh-MU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </li>
+        <li>
+          <div class="movie-box">
+            <iframe data-scroll src="https://www.youtube.com/embed/JHLY-NzJnjU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </li>
+        <li>
+          <div class="movie-box">
+            <iframe data-scroll src="https://www.youtube.com/embed/WgJMamqWJdE" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </li>
+      </ul>
+      <ul id="thumbImg02" class="thumb-img">
+        <li class="is-current02">
+          <img src="/assets/img/dummy/dummy06.png" alt="">
+        </li>
+        <li>
+          <img src="/assets/img/dummy/dummy07.png" alt="">
+        </li>
+        <li>
+          <img src="/assets/img/dummy/dummy08.png" alt="">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c-cnt" id="tab-switch">
+    <div class="inner">
+      <div class="tabs">
+        <input id="all" type="radio" name="tabs__item" checked>
+        <label class="tabs__item color01" for="all">総合</label>
+        <input id="programming" type="radio" name="tabs__item">
+        <label class="tabs__item color02" for="programming">プログラミング</label>
+        <input id="design" type="radio" name="tabs__item">
+        <label class="tabs__item color03" for="design">デザイン</label>
+        
+        <div class="tabs__content color01" id="all_content">
+          <div class="tabs__content--description">
+            <p class="c-txtsp">総合の内容がここに入ります</p>
+          </div>
+        </div>
+        <div class="tabs__content color02" id="programming_content">
+          <div class="tabs__content--description">
+            <p class="c-txtsp">プログラミングの内容がここに入ります</p>
+          </div>
+        </div>
+        <div class="tabs__content color03" id="design_content">
+          <div class="tabs__content--description">
+            <p class="c-txtsp">デザインの内容がここに入ります</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
   <!-- ▼ footer ▼ -->
   <footer class="footer" id="page-footerlayout">
@@ -223,15 +268,27 @@
   <!-- js -->
   <script src="/assets/js/script.js"></script>
   <script>
-    // Modal Window
-    $('.js-open').on('click', function(){
-      let target = $(this).data('target');
-      var modal = $(`#${target}`);
-      $(modal).fadeIn();
-      $('#overlay, .js-close').fadeIn();
+    // 切り替え01
+    $('#thumbImg img').on('click', function(){
+      thumbImg = $(this).attr('src');
+      $('#thumbImg li').removeClass('is-current');
+      $(this).parent().addClass('is-current');
+      $('#mainImg img').fadeOut(200, function(){
+        $('#mainImg img').attr('src', thumbImg).fadeIn();
+      });
     });
-    $('.js-close').on('click', function(){
-      $('#overlay, .js-window, .js-close').fadeOut();
+
+    // 切り替え02
+    $('#thumbImg02 li').on('click', function(){
+      $('#thumbImg02 li').removeClass('is-current02');
+      $(this).addClass('is-current02');
+      var index = $('#thumbImg02 li').index(this);
+      //console.log(index);
+      $('#mainImg02 li').removeClass('is-current-movie');
+      $('#mainImg02 li').eq(index).addClass('is-current-movie'); // .eq(index)で同じ番目を指定
+      $('#mainImg02 iframe').fadeOut(100, function(){
+        $(this).fadeIn();
+      });
     });
   </script>
 </body>

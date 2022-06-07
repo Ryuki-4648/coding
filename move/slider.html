@@ -30,6 +30,9 @@
   <!-- Touch Icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/common/apple-touch-icon.png">
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />	
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <!-- OGP -->
   <meta name="og:url" content="">
   <meta name="og:title" content="">
@@ -42,36 +45,40 @@
 <body>
 
   <style>
-    .select-box {
-      display: flex;
-      justify-content: space-between;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      margin: 0 auto 50px;
-    }
-    .select-box li {
-      cursor: pointer;
-      margin: 0 auto;
-      color: #777;
-    }
-    .category-box {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-    .category-box div {
-      width: 100px;
-      border: 1px solid #ddd;
-      text-align: center;
-      font-size: 13px;
-      padding: 10px 0;
-      width: 30%;
-      margin: 0 auto 20px;
-    }
-    .hidden {
-      display: none;
-    }
+.swiper-wrap {
+  /*margin: 0 calc(50% - 50vw);
+  max-width: 100vw;
+  position: relative;
+  overflow: hidden;*/
+}
+
+/*@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+*/
+
+.slide-text{
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3vw;
+  font-family: serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #000;
+  color: #fff;
+  transform: translate(-50%,-50%);*/
+}
+
+.slide-img img{
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+}
   </style>
   
   <!-- ▼ header ▼ -->
@@ -162,128 +169,70 @@
 
   <section class="c-cnt">
     <div class="inner">
-      <div class="c-block block-04">
-        <ul class="c-block__list block-04__list">
-          <li class="c-block__item block-04__item">
-            <div class="c-btn ta-Center"><a href="#click-sort" class="btn01" style="width: 100%;">クリックでソート</a></div>
-          </li>
-          <li class="c-block__item block-04__item">
-            <div class="c-btn ta-Center"><a href="" class="btn01" style="width: 100%;">（タイトル）</a></div>
-          </li>
-          <li class="c-block__item block-04__item">
-            <div class="c-btn ta-Center"><a href="" class="btn01" style="width: 100%;">（タイトル）</a></div>
-          </li>
-        </ul>
-      </div>
-      <!-- /.c-block .block-04 -->
-    </div>
-  </section>
-
-  <section class="c-cnt" id="sort-click">
-    <div class="inner">
-      <p>クリックすると当てはまるものだけ表示させる。</p>
-      <br><br><br>
-      <ul class="select-box">
-        <li id="cat01">北海道・東北・北陸</li>
-        <li id="cat02">関東・甲信越</li>
-        <li id="cat03">中部・東海</li>
-        <li id="cat04">近畿・四国</li>
-        <li id="cat05">九州・沖縄</li>
-        <li id="all">すべて</li>
-      </ul>
-
-      <div class="category-box">
-        <div class="category cat-01 hidden">
-          <p>北海道</p>
-        </div>
-        <div class="category cat-04 hidden">
-          <p>兵庫県</p>
-        </div>
-        <div class="category cat-02 hidden">
-          <p>山梨県</p>
-        </div>
-        <div class="category cat-04 hidden">
-          <p>大阪府</p>
-        </div>
-        <div class="category cat-03 hidden">
-          <p>長野県</p>
-        </div>
-        <div class="category cat-05 hidden">
-          <p>長崎県</p>
-        </div>
-        <div class="category cat-05 hidden">
-          <p>宮崎県</p>
-        </div>
-        <div class="category cat-01 hidden">
-          <p>新潟県</p>
-        </div>
-        <div class="category cat-02 hidden">
-          <p>東京都</p>
-        </div>
-        <div class="category cat-03 hidden">
-          <p>三重県</p>
-        </div>
-        <div class="category cat-03 hidden">
-          <p>岐阜県</p>
-        </div>
-        <div class="category cat-05 hidden">
-          <p>佐賀県</p>
-        </div>
-        <div class="category cat-02 hidden">
-          <p>茨城県</p>
-        </div>
-        <div class="category cat-05 hidden">
-          <p>沖縄県</p>
-        </div>
-        <div class="category cat-01 hidden">
-          <p>青森県</p>
+      <div class="p-top-kv">
+        <div class="js-slider-container">
+          <ul class="swiper-wrapper p-top-kv__slider js-slider-top">
+            <li class="swiper-slide p-top-kv__slider-item">
+              <h2 class="p-top-kv__ttl01">メカトロニクス、核酸分離技術で<br>グローバルに展開しています</h2>
+              <div class="p-top-kv__wrap">
+                <img src="/assets/img/dummy/image01.jpg" class="p-top-kv__img">
+              </div>
+              <span class="p-top-kv__line01"></span>
+            </li>
+            <li class="swiper-slide p-top-kv__slider-item">
+              <h2 class="p-top-kv__ttl02">クラボウは細胞工学、<br>遺伝子工学で研究支援します</h2>
+              <div class="p-top-kv__wrap">
+                <img src="/assets/img/dummy/image02.jpg" class="p-top-kv__img">
+              </div>
+              <span class="p-top-kv__line02"></span>
+            </li>
+            <li class="swiper-slide p-top-kv__slider-item">
+              <h2 class="p-top-kv__ttl03">前臨床、診断支援で<br>個別化医療をサポートします</h2>
+              <div class="p-top-kv__wrap">
+                <img src="/assets/img/dummy/image03.jpg" class="p-top-kv__img">
+              </div>
+              <span class="p-top-kv__line03"></span>
+            </li>
+          </ul>
+          <!--<div class="swiper-pagination"></div>-->
         </div>
       </div>
-
     </div>
   </section>
 
   <script>
-    $('.category-box .category').removeClass('hidden');
-  
-    for ( let i = 1; i < 6; i++ ) {
-      $(`#cat0${i}`).on('click', function(){
-        //console.log(`#cat0${i}`);
-        $('.category-box .category').not(`.cat-0${i}`).addClass('hidden');
-        $(`.cat-0${i}`).removeClass('hidden');
-      });
-    }
-    // letをvarにすると全部.hiddenが付いて消えてしまう。
-    // click後にconsole.log(`#cat0${i}`);→#cat06が出力されてしまう
+    let swiper01 = new Swiper('.js-slider-container', {
+      speed: 1500,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 6500,
+      },
+    });
+
+    swiper01.on('slideChange', function(){
+      if(this.realIndex > 0) {
+        this.params.autoplay.delay = 5000;
+      }
+    });
 
     /*
-    下記をfor文でまとめたもの　↑
-    $('#cat01').on('click', function(){
-      $('.category-box .category').not('.cat-01').addClass('hidden');
-      $('.cat-01').removeClass('hidden');
-    });
-    $('#cat02').on('click', function(){
-      $('.category-box .category').not('.cat-02').addClass('hidden');
-      $('.cat-02').removeClass('hidden');
-    });
-    $('#cat03').on('click', function(){
-      $('.category-box .category').not('.cat-03').addClass('hidden');
-      $('.cat-03').removeClass('hidden');
-    });
-    $('#cat04').on('click', function(){
-      $('.category-box .category').not('.cat-04').addClass('hidden');
-      $('.cat-04').removeClass('hidden');
-    });
-    $('#cat05').on('click', function(){
-      $('.category-box .category').not('.cat-05').addClass('hidden');
-      $('.cat-05').removeClass('hidden');
-    });
-    */
-
-    $('#all').on('click', function(){
-      $('.category-box .category').removeClass('hidden');
-    });
-
+    let swipeOption = {
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    }
+  }
+  new Swiper('.js-slider-container', swipeOption);
+  */
   </script>
+
 </body>
 </html>
